@@ -1,0 +1,310 @@
+<svg width="1600" height="420" viewBox="0 0 1600 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+<defs>
+
+<!-- Background Gradient -->
+<linearGradient id="bg" x1="0" y1="0" x2="1600" y2="420">
+<stop offset="0%" stop-color="#0D1117"/>
+<stop offset="50%" stop-color="#111827"/>
+<stop offset="100%" stop-color="#0D1117"/>
+
+<animate attributeName="x1"
+values="0;1600;0"
+dur="20s"
+repeatCount="indefinite"/>
+
+</linearGradient>
+
+<!-- Accent Gradient -->
+
+<linearGradient id="accent">
+
+<stop offset="0%" stop-color="#58A6FF"/>
+
+<stop offset="50%" stop-color="#79C0FF"/>
+
+<stop offset="100%" stop-color="#58A6FF"/>
+
+<animate attributeName="x1"
+values="0;1;0"
+dur="10s"
+repeatCount="indefinite"/>
+
+</linearGradient>
+
+<!-- Glow -->
+
+<filter id="glow">
+
+<feGaussianBlur stdDeviation="12" result="blur"/>
+
+<feMerge>
+
+<feMergeNode in="blur"/>
+
+<feMergeNode in="SourceGraphic"/>
+
+</feMerge>
+
+</filter>
+
+<!-- Grid Pattern -->
+
+<pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+
+<path d="M40 0H0V40"
+stroke="#1F2937"
+stroke-width="1"/>
+
+</pattern>
+
+</defs>
+
+<!-- Background -->
+
+<rect width="1600" height="420" fill="url(#bg)"/>
+
+<!-- Grid -->
+
+<rect width="1600" height="420"
+fill="url(#grid)"
+opacity=".35"/>
+
+<!-- Animated Circles -->
+
+<circle cx="1350" cy="90" r="160"
+fill="#58A6FF"
+opacity=".08">
+
+<animate attributeName="cy"
+values="90;120;90"
+dur="8s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle cx="250" cy="320" r="120"
+fill="#79C0FF"
+opacity=".05">
+
+<animate attributeName="cy"
+values="320;290;320"
+dur="6s"
+repeatCount="indefinite"/>
+
+</circle>
+
+<!-- Glass Card -->
+
+<rect
+
+x="130"
+
+y="70"
+
+rx="24"
+
+width="1340"
+
+height="280"
+
+fill="#161B22"
+
+fill-opacity=".65"
+
+stroke="#30363D"
+
+stroke-width="1.5"/>
+
+<!-- Decorative Line -->
+
+<line
+
+x1="170"
+
+y1="125"
+
+x2="520"
+
+y2="125"
+
+stroke="url(#accent)"
+
+stroke-width="4"
+
+filter="url(#glow)">
+
+<animate attributeName="x2"
+
+values="420;650;420"
+
+dur="4s"
+
+repeatCount="indefinite"/>
+
+</line>
+
+<!-- Name -->
+
+<text
+
+x="170"
+
+y="185"
+
+font-size="52"
+
+font-family="Inter,Segoe UI,Arial"
+
+font-weight="700"
+
+fill="#F0F6FC">
+
+MUJTABA ABDUL MANNAN
+
+</text>
+
+<!-- Role -->
+
+<text
+
+x="170"
+
+y="225"
+
+font-size="24"
+
+font-family="Inter"
+
+fill="#58A6FF">
+
+Frontend Web Developer
+
+</text>
+
+<!-- Education -->
+
+<text
+
+x="170"
+
+y="260"
+
+font-size="21"
+
+font-family="Inter"
+
+fill="#C9D1D9">
+
+Information Technology Engineering Student
+
+</text>
+
+<!-- Tagline -->
+
+<text
+
+x="170"
+
+y="305"
+
+font-size="19"
+
+font-family="Inter"
+
+fill="#8B949E">
+
+Building Modern Digital Experiences
+
+</text>
+
+<!-- Right Side Accent -->
+
+<g transform="translate(1130 95)">
+
+<rect
+
+width="220"
+
+height="220"
+
+rx="28"
+
+fill="#0D1117"
+
+stroke="#30363D"/>
+
+<circle
+
+cx="110"
+
+cy="110"
+
+r="56"
+
+fill="none"
+
+stroke="#58A6FF"
+
+stroke-width="4">
+
+<animate attributeName="r"
+
+values="50;58;50"
+
+dur="5s"
+
+repeatCount="indefinite"/>
+
+</circle>
+
+<circle
+
+cx="110"
+
+cy="110"
+
+r="25"
+
+fill="#58A6FF"
+
+opacity=".9">
+
+<animate attributeName="r"
+
+values="20;28;20"
+
+dur="3s"
+
+repeatCount="indefinite"/>
+
+</circle>
+
+</g>
+
+<!-- Bottom Wave -->
+
+<path
+
+d="M0 360 C300 390 550 330 800 360 C1050 390 1300 330 1600 360 V420 H0Z"
+
+fill="#161B22"
+
+opacity=".85">
+
+<animate
+
+attributeName="d"
+
+dur="8s"
+
+repeatCount="indefinite"
+
+values="
+M0 360 C300 390 550 330 800 360 C1050 390 1300 330 1600 360 V420 H0Z;
+M0 350 C300 320 550 390 800 350 C1050 320 1300 390 1600 350 V420 H0Z;
+M0 360 C300 390 550 330 800 360 C1050 390 1300 330 1600 360 V420 H0Z"/>
+
+</path>
+
+</svg>
