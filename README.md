@@ -1,159 +1,311 @@
-```markdown
-<!-- 
-  WORLD-CLASS GITHUB PROFILE README 
-  Designed for: Mujtaba Abdul Mannan
-  Theme: Premium, Minimal, Dark-Theme Friendly (Blue, Black, White, Light Gray)
-  Note: If your exact GitHub username differs from 'MujtabaAbdulMannan', please perform a quick Find & Replace for the analytics URLs.
--->
-
-<br />
+<!-- ========================================================= -->
+<!--                                                           -->
+<!--        MUJTABA ABDUL MANNAN • GitHub Profile README        -->
+<!--                                                           -->
+<!--===========================================================-->
 
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&pause=1500&color=007BFF&center=true&vCenter=true&width=700&lines=Hi+there,+I'm+Mujtaba+Abdul+Mannan+👋;Frontend+Web+Developer;IT+Engineering+Student;Graphic+Designer;UI+Enthusiast;Always+Learning;Building+Modern+Digital+Experiences" alt="Typing SVG" />
+
+<img
+src="./assets/header.svg"
+width="100%"
+alt="Mujtaba Abdul Mannan"
+/>
+
 </p>
 
-<br />
+# Hi, I'm Mujtaba Abdul Mannan 👋
+
+### Frontend Web Developer
+
+**Information Technology Engineering Student**
+
+Building modern, responsive, and user-focused web experiences through clean code, thoughtful design, and continuous learning.
+
+---
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Location-Hyderabad,%20India-007BFF?style=flat-square&logo=map&logoColor=white" alt="Location" />
-  <img src="https://img.shields.io/badge/Focus-Frontend%20Engineering-007BFF?style=flat-square&logo=react&logoColor=white" alt="Focus" />
-  <img src="https://komarev.com/ghpvc/?username=MujtabaAbdulMannan&label=Profile%20Views&color=007BFF&style=flat-square" alt="Profile Views" />
-</p>
 
-<br />
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=500&size=22&duration=3000&pause=1200&color=58A6FF&center=true&vCenter=true&width=900&lines=Frontend+Web+Developer;Information+Technology+Engineering+Student;Building+Modern+Responsive+Websites;UI+%26+Graphic+Design+Enthusiast;Always+Learning;Engineering+Elegant+Digital+Experiences)](https://git.io/typing-svg)
 
----
-
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="24" alt="VS Code" /> &nbsp;Introduction
-
-I am a passionate **Frontend Web Developer** and **2nd-year Information Technology Engineering student** based in Hyderabad, India. I specialize in crafting responsive, high-performance, and visually stunning web experiences. With a strong foundation in design and a relentless curiosity for modern web technologies, I bridge the gap between elegant UI/UX and robust engineering. My goal is to build impactful digital products, secure meaningful engineering opportunities, and continuously evolve as a software professional.
-
----
-
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24" alt="GitHub" /> &nbsp;About Me
-
-- 🎓 **2nd-Year IT Engineering Student** building a strong academic and practical foundation.
-- 🎨 **Graphic Designer & UI Enthusiast** with a keen eye for typography, spacing, and visual hierarchy.
-- 💻 **Frontend-Focused** passionate about transforming complex problems into clean, intuitive interfaces.
-- 🚀 **Career-Driven** actively seeking remote internships, freelance collaborations, and software engineering roles.
-- 🧩 **Problem Solver** who loves building real-world projects that deliver tangible value.
-- 🌱 **Continuous Learner** dedicated to mastering best practices and staying ahead of the technology curve.
-
----
-
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24" alt="Tech" /> &nbsp;Tech Stack
-
-<p align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" height="50" alt="HTML5" title="HTML5" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" height="50" alt="CSS3" title="CSS3" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" height="50" alt="JavaScript" title="JavaScript" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50" height="50" alt="Git" title="Git" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" height="50" alt="GitHub" title="GitHub" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50" height="50" alt="Visual Studio Code" title="Visual Studio Code" />
-  <img src="https://cdn.simpleicons.org/adobephotoshop/31A8FF" width="50" height="50" alt="Adobe Photoshop" title="Adobe Photoshop" />
-  <img src="https://cdn.simpleicons.org/canva/00C4CC" width="50" height="50" alt="Canva" title="Canva" />
 </p>
 
 ---
 
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="24" alt="Learning" /> &nbsp;Currently Learning
+# About Me
 
-- ⚡ **Advanced JavaScript** (ES6+, Async/Await, Closures)
-- 🏗️ **Frontend Best Practices** (Clean Architecture, Component Design)
-- 📱 **Responsive UI Architecture** (Mobile-First, Adaptive Layouts)
-- 🚀 **Performance Optimization** (Core Web Vitals, Lazy Loading)
-- 🔄 **Advanced Git Workflow** (Branching Strategies, CI/CD Basics)
+I'm a second-year Information Technology Engineering student based in Hyderabad, India.
+
+I enjoy transforming ideas into modern, responsive websites with a strong focus on clean interfaces, usability, and continuous improvement.
+
+I'm currently strengthening my JavaScript fundamentals while exploring best practices in frontend engineering and preparing for internships and real-world software development opportunities.
 
 ---
 
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="24" alt="Projects" /> &nbsp;Featured Projects
+## Quick Information
 
-<table align="center" width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h3>🧴 LUMAAN Perfumes</h3>
-      <p>A luxury perfume website featuring modern UI, responsive layouts, elegant branding, premium animations, and a refined user experience.</p>
-      <p>
-        <a href="#"><img src="https://img.shields.io/badge/Live_Demo-007BFF?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
-        <a href="#"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo" /></a>
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>💇‍♀️ Pearl Beauty Parlour</h3>
-      <p>A professional beauty salon website featuring elegant layouts, responsive design, appointment-focused pages, and premium branding.</p>
-      <p>
-        <a href="#"><img src="https://img.shields.io/badge/Live_Demo-007BFF?style=flat-square&logo=googlechrome&logoColor=white" alt="Live Demo" /></a>
-        <a href="#"><img src="https://img.shields.io/badge/GitHub-181717?style=flat-square&logo=github&logoColor=white" alt="GitHub Repo" /></a>
-      </p>
-    </td>
-  </tr>
+| | |
+|:--|:--|
+| 🎓 Education | B.E. Information Technology (Second Year) |
+| 💻 Role | Frontend Web Developer |
+| 🌍 Location | Hyderabad, India |
+| 🌱 Learning | Advanced JavaScript, Accessibility, Performance |
+| 🎯 Goal | Software Engineering Internship |
+| 💬 Interests | UI Design • Frontend Development • Modern Web |
+| ⚡ Strength | Responsive Interfaces & Clean Design |
+
+---
+
+# Engineering Dashboard
+
+| Skill | Status |
+|:------|:------:|
+| HTML5 | ██████████ |
+| CSS3 | ██████████ |
+| JavaScript | ████████░░ |
+| Responsive Design | █████████░ |
+| UI Design | █████████░ |
+| Git | ███████░░░ |
+| GitHub | ███████░░░ |
+| Learning Progress | 🚀 Active |
+
+---
+
+# Tech Stack
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode" />
+
+</p>
+
+### Design Tools
+
+<p>
+
+<img src="https://skillicons.dev/icons?i=photoshop" />
+
+<img
+height="48"
+src="https://cdn.simpleicons.org/canva/00C4CC"
+/>
+
+</p>
+
+---
+
+# Currently Learning
+
+- Advanced JavaScript
+- Responsive UI Architecture
+- Accessibility (WCAG)
+- Git Workflow
+- Performance Optimization
+- Frontend Best Practices
+
+---
+---
+
+# Featured Projects
+
+<table>
+
+<tr>
+
+<td width="50%" valign="top">
+
+## 🌟 LUMAAN Perfumes
+
+Luxury-inspired perfume eCommerce website designed with a modern user experience and premium visual identity influenced by Arabian and French fragrance brands.
+
+### Highlights
+
+- Premium responsive interface
+- Elegant branding
+- Smooth UI interactions
+- Product showcase pages
+- Shopping experience
+- Mobile-first design
+
+### Tech Stack
+
+`HTML5` • `CSS3` • `JavaScript`
+
+### Future Improvements
+
+- Shopping Cart
+- Secure Checkout
+- User Authentication
+- Product Search
+- Order Tracking
+
+<p align="center">
+
+<a href="#">
+<img src="https://img.shields.io/badge/Live_Demo-Coming_Soon-58A6FF?style=for-the-badge"/>
+</a>
+
+<a href="#">
+<img src="https://img.shields.io/badge/GitHub-Repository-21262D?style=for-the-badge&logo=github"/>
+</a>
+
+</p>
+
+</td>
+
+<td width="50%" valign="top">
+
+## 💎 Pearl Beauty Parlour
+
+Professional business website developed for a beauty salon with an emphasis on responsive layouts, appointment-focused design, and a clean customer experience.
+
+### Highlights
+
+- Responsive design
+- Elegant business branding
+- Appointment-focused interface
+- Mobile-friendly experience
+- Professional landing page
+
+### Tech Stack
+
+`HTML5` • `CSS3` • `JavaScript`
+
+### Future Improvements
+
+- Online Booking
+- Gallery Management
+- Google Maps Integration
+- Customer Reviews
+- Admin Dashboard
+
+<p align="center">
+
+<a href="#">
+<img src="https://img.shields.io/badge/Live_Demo-Coming_Soon-58A6FF?style=for-the-badge"/>
+</a>
+
+<a href="#">
+<img src="https://img.shields.io/badge/GitHub-Repository-21262D?style=for-the-badge&logo=github"/>
+</a>
+
+</p>
+
+</td>
+
+</tr>
+
 </table>
 
-<br />
-
 ---
 
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24" alt="Analytics" /> &nbsp;GitHub Analytics
+# GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=MujtabaAbdulMannan&show_icons=true&hide_border=true&bg_color=0d1117&title_color=ffffff&icon_color=007bff&text_color=cccccc&hide=contribs,prs" alt="GitHub Stats" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=MujtabaAbdulMannan&layout=compact&hide_border=true&bg_color=0d1117&title_color=ffffff&text_color=cccccc" alt="Top Languages" />
+
+<img height="170" src="https://github-readme-stats.vercel.app/api?username=mujtabaabdulmannan&show_icons=true&theme=github_dark&hide_border=true&rank_icon=github"/>
+
+<img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mujtabaabdulmannan&layout=compact&theme=github_dark&hide_border=true"/>
+
 </p>
 
 <p align="center">
-  <img src="https://streak-stats.demolab.com?user=MujtabaAbdulMannan&theme=dark&hide_border=true&background=0D1117&ring=007bff&fire=ffffff&currStreakNum=ffffff&sideNums=cccccc&currStreakLabel=ffffff&sideLabels=cccccc&dates=cccccc" alt="GitHub Streak" />
+
+<img src="https://streak-stats.demolab.com?user=mujtabaabdulmannan&theme=github-dark-blue&hide_border=true"/>
+
 </p>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=MujtabaAbdulMannan&theme=react-dark&hide_border=true&bg_color=0d1117&color=cccccc&title_color=ffffff&line=007bff&point=ffffff&area_color=0d1117&area=true" alt="Activity Graph" />
-</p>
 
----
+<img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=mujtabaabdulmannan&theme=github-dark&hide_border=true"/>
 
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="24" alt="Achievements" /> &nbsp;Achievements & Mindset
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Clean_Code-Enthusiast-007BFF?style=for-the-badge&logo=codefactor&logoColor=white" alt="Clean Code" />
-  <img src="https://img.shields.io/badge/UI/UX-Design_Focused-007BFF?style=for-the-badge&logo=figma&logoColor=white" alt="UI/UX" />
-  <img src="https://img.shields.io/badge/Continuous_Learner-Always_Growing-007BFF?style=for-the-badge&logo=bookstack&logoColor=white" alt="Continuous Learner" />
 </p>
 
 ---
 
-### <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="24" alt="Connect" /> &nbsp;Let's Connect
+# Engineering Philosophy
 
-<p align="center">
-  <a href="https://www.linkedin.com/in/mujtabaabdulmannan" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
-  </a>
-  <a href="mailto:mrmujtabaabdulmannan@gmail.com" target="_blank">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" />
-  </a>
-  <a href="#" target="_blank">
-    <img src="https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="https://github.com/MujtabaAbdulMannan" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
-  </a>
-</p>
-
-<br />
+> **Build with purpose.**
+>
+> Every project is an opportunity to improve not only technical skills but also the experience of the people who use it. I believe in writing clean, maintainable code, designing intuitive interfaces, and continuously learning through real-world projects.
 
 ---
 
-### 💡 Fun Fact
-> I enjoy transforming abstract ideas into elegant, functional digital experiences through the perfect blend of code and design.
+# Development Workflow
 
-### 💬 Inspiring Quote
-> *"First, solve the problem. Then, write the code."* — **John Johnson**
-
-<br />
-
-<p align="center">
-  <sub>Designed & Built with precision by <strong>Mujtaba Abdul Mannan</strong></sub>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=soft&color=0:007BFF,100:0d1117&height=2&section=footer" width="100%" alt="Footer Divider" />
-</p>
+```text
+        Research
+            │
+            ▼
+        Planning
+            │
+            ▼
+      UI / UX Design
+            │
+            ▼
+       Development
+            │
+            ▼
+         Testing
+            │
+            ▼
+      Optimization
+            │
+            ▼
+ Continuous Improvement
 ```
+
+---
+
+# 2026 Goals
+
+- ✅ Strengthen JavaScript fundamentals
+- 🎯 Learn React
+- 🚀 Build 15+ high-quality projects
+- 💼 Secure a Software Engineering Internship
+- 🌍 Gain freelance development experience
+- 🤝 Contribute to Open Source
+
+---
+
+# Connect With Me
+
+<p align="center">
+
+<a href="https://www.linkedin.com/in/mujtabaabdulmannan">
+<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin"/>
+</a>
+
+<a href="https://github.com/mujtabaabdulmannan">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="mailto:mrmujtabaabdulmannan@gmail.com">
+<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail"/>
+</a>
+
+<a href="#">
+<img src="https://img.shields.io/badge/Portfolio-Coming_Soon-58A6FF?style=for-the-badge"/>
+</a>
+
+</p>
+
+---
+
+<p align="center">
+
+<img src="https://komarev.com/ghpvc/?username=mujtabaabdulmannan&label=Profile+Views&color=58A6FF&style=flat"/>
+
+</p>
+
+---
+
+<p align="center">
+
+### "Great software is built through curiosity, consistency, and continuous learning."
+
+Thank you for visiting my profile.
+
+⭐ If you find my work interesting, feel free to explore my repositories and connect with me.
+
+</p>
