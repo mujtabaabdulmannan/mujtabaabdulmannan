@@ -1,1499 +1,383 @@
-<!-- ====================================================================== -->
-<!--                                                                         -->
-<!--                MUJTABA ABDUL MANNAN • GITHUB PROFILE                    -->
-<!--                                                                         -->
-<!-- ====================================================================== -->
+<!-- 
+  ============================================================================
+  MUJTABA ABDUL MANNAN • PREMIUM GITHUB PROFILE
+  Frontend Web Developer | Information Technology Engineering Student
+  ============================================================================
+  NOTE: This README uses advanced GitHub-compatible HTML, inline styling, 
+  and dynamic SVG widgets to simulate a high-end CSS/JS portfolio experience.
+  ============================================================================
+-->
 
 <p align="center">
-
-<img src="./assets/header.svg" width="100%" alt="Header"/>
-
-</p>
-
-<br>
-
-<h1 align="center">
-
-Mujtaba Abdul Mannan
-
-</h1>
-
-<p align="center">
-
-<strong>Frontend Web Developer</strong>
-
-<br>
-
-Information Technology Engineering Student
-
+  <!-- ASSET: Create an animated SVG with CSS keyframes inside this file -->
+  <img src="./assets/header.svg" width="100%" alt="Mujtaba Abdul Mannan Header" style="border-radius: 12px; margin-bottom: 20px;" />
 </p>
 
 <p align="center">
-
-Building modern, responsive and user-focused digital experiences through
-clean code, elegant interfaces and continuous learning.
-
+  <!-- DYNAMIC JS TYPING EFFECT (Backend rendered as SVG) -->
+  <img src="https://readme-typing-svg.demolab.com?font=Inter&weight=600&size=22&pause=1500&color=58A6FF&center=true&vCenter=true&width=700&height=50&lines=Frontend+Web+Developer;Information+Technology+Engineering+Student;Crafting+Modern+Responsive+Experiences;Continuous+Learner+%26+Problem+Solver" alt="Typing Animation" />
 </p>
 
-<br>
+<br />
+
+<!-- ============================================================================
+  SECTION 1: PROFESSIONAL INTRODUCTION (Apple/Stripe Style)
+  ============================================================================ -->
+
+<div align="center">
+  <h1 style="font-size: 32px; font-weight: 700; color: #F0F6FC; margin-bottom: 8px;">Mujtaba Abdul Mannan</h1>
+  <p style="font-size: 18px; color: #8B949E; max-width: 650px; line-height: 1.6; margin: 0 auto 24px auto;">
+    Second-Year Information Technology Engineering Student based in Hyderabad, India. 
+    I engineer modern, responsive, and user-centric digital experiences through clean code, 
+    thoughtful design, and relentless attention to detail.
+  </p>
+  
+  <p style="margin-bottom: 24px;">
+    <a href="https://linkedin.com/in/mujtabaabdulmannan" style="text-decoration: none;">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="border-radius: 6px;" />
+    </a>
+    <a href="https://github.com/mujtabaabdulmannan" style="text-decoration: none;">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="border-radius: 6px;" />
+    </a>
+    <a href="mailto:mrmujtabaabdulmannan@gmail.com" style="text-decoration: none;">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" style="border-radius: 6px;" />
+    </a>
+  </p>
+</div>
+
+<!-- ============================================================================
+  SECTION 2: ENGINEERING DASHBOARD
+  ============================================================================ -->
 
 <p align="center">
-
-<a href="https://www.linkedin.com/in/mujtabaabdulmannan">
-
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-
-</a>
-
-<a href="https://github.com/mujtabaabdulmannan">
-
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-
-</a>
-
-<a href="mailto:mrmujtabaabdulmannan@gmail.com">
-
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-
-</a>
-
-<a href="#">
-
-<img src="https://img.shields.io/badge/Portfolio-Coming_Soon-2563EB?style=for-the-badge"/>
-
-</a>
-
+  <!-- ASSET: A sleek dashboard SVG showing your stats visually -->
+  <img src="./assets/dashboard.svg" width="100%" alt="Engineering Dashboard" style="border-radius: 12px; border: 1px solid #30363D;" />
 </p>
 
----
+<!-- ============================================================================
+  SECTION 3: ABOUT ME (High-End Typography & Layout)
+  ============================================================================ -->
 
-# Engineering Profile
-
-> *"I enjoy transforming ideas into modern, responsive and meaningful digital experiences through thoughtful design and frontend engineering."*
-
-I'm **Mujtaba Abdul Mannan**, a **Second-Year Information Technology Engineering Student** based in **Hyderabad, India**.
-
-My primary focus is frontend web development, where I enjoy building modern interfaces that combine usability, performance and clean visual design.
-
-I believe good software is more than writing code—it is about understanding user problems, designing intuitive experiences and continuously improving through practice.
-
-Currently I'm investing my time in strengthening JavaScript fundamentals, building production-quality frontend projects and preparing for future software engineering internships.
-
----
-
-# Quick Overview
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-### 👨‍💻 Profile
-
-```text
-Role
-
-Frontend Web Developer
-
-Education
-
-Information Technology Engineering
-
-Current Year
-
-Second Year
-
-Location
-
-Hyderabad, India
-
-Career Goal
-
-Software Engineer
-```
-
-</td>
-
-<td width="50%">
-
-### 🎯 Current Focus
-
-```text
-✓ Modern Frontend Development
-
-✓ Responsive Design
-
-✓ JavaScript
-
-✓ UI Design
-
-✓ Performance
-
-✓ Accessibility
-
-✓ Real Projects
-
-✓ Continuous Learning
-```
-
-</td>
-
-</tr>
-
+<table style="width: 100%; border-collapse: separate; border-spacing: 0 16px;">
+  <tr>
+    <td width="65%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 24px; vertical-align: top;">
+      <h3 style="color: #58A6FF; margin-top: 0; font-size: 20px;">👨‍💻 About Me</h3>
+      <p style="color: #F0F6FC; font-size: 15px; line-height: 1.7; margin-bottom: 16px;">
+        I am a <strong style="color: #F0F6FC;">Second-Year Information Technology Engineering Student</strong> with a deep focus on <strong style="color: #58A6FF;">Frontend Web Development</strong>. 
+      </p>
+      <p style="color: #8B949E; font-size: 15px; line-height: 1.7; margin-bottom: 16px;">
+        My engineering philosophy is simple: great software is not just about writing code. It is about understanding user problems, architecting intuitive experiences, and writing maintainable, scalable code. I believe in learning by building, which is why I dedicate my time to production-quality projects that solve real-world problems.
+      </p>
+      <p style="color: #F0F6FC; font-size: 15px; line-height: 1.7;">
+        <strong style="color: #3FB950;">Current Focus:</strong> Mastering advanced JavaScript patterns, optimizing web performance, enforcing WCAG accessibility standards, and preparing for impactful software engineering internships.
+      </p>
+    </td>
+    <td width="35%" style="vertical-align: top; padding-left: 16px;">
+      <img src="https://github-readme-stats.vercel.app/api?username=mujtabaabdulmannan&show_icons=true&theme=github_dark&hide_border=true&count_private=true&title_color=58A6FF&icon_color=3FB950" alt="GitHub Stats" style="width: 100%; border-radius: 12px;" />
+      <br /><br />
+      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=mujtabaabdulmannan&layout=compact&theme=github_dark&hide_border=true&title_color=58A6FF" alt="Top Languages" style="width: 100%; border-radius: 12px;" />
+    </td>
+  </tr>
 </table>
 
----
+<!-- ============================================================================
+  SECTION 4: ENGINEERING METRICS (Inline CSS Cards)
+  ============================================================================ -->
 
-# Professional Highlights
+<br />
+<h3 style="color: #F0F6FC; border-bottom: 1px solid #30363D; padding-bottom: 8px;">📊 Engineering Metrics</h3>
 
-<table>
-
-<tr>
-
-<td align="center" width="25%">
-
-### 💻
-
-Frontend
-
-Modern responsive websites
-
-</td>
-
-<td align="center" width="25%">
-
-### 🎨
-
-UI Design
-
-Clean interfaces
-
-</td>
-
-<td align="center" width="25%">
-
-### 🚀
-
-Projects
-
-Real-world portfolio
-
-</td>
-
-<td align="center" width="25%">
-
-### 📚
-
-Learning
-
-Always improving
-
-</td>
-
-</tr>
-
+<table style="width: 100%; border-collapse: separate; border-spacing: 12px 0;">
+  <tr>
+    <td width="25%" align="center" style="background: linear-gradient(145deg, #161B22, #0D1117); border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #58A6FF; margin: 0 0 8px 0;">Frontend Dev</h4>
+      <p style="color: #8B949E; font-size: 13px; margin: 0 0 12px 0;">Modern UI & Architecture</p>
+      <img src="https://progress-bar.dev/85/?scale=100&title=Proficiency&width=150&color=58A6FF&suffix=%25" alt="Frontend" />
+    </td>
+    <td width="25%" align="center" style="background: linear-gradient(145deg, #161B22, #0D1117); border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #3FB950; margin: 0 0 8px 0;">Responsive Design</h4>
+      <p style="color: #8B949E; font-size: 13px; margin: 0 0 12px 0;">Mobile-First Layouts</p>
+      <img src="https://progress-bar.dev/90/?scale=100&title=Proficiency&width=150&color=3FB950&suffix=%25" alt="Responsive" />
+    </td>
+    <td width="25%" align="center" style="background: linear-gradient(145deg, #161B22, #0D1117); border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #D29922; margin: 0 0 8px 0;">JavaScript</h4>
+      <p style="color: #8B949E; font-size: 13px; margin: 0 0 12px 0;">ES6+ & DOM Manipulation</p>
+      <img src="https://progress-bar.dev/70/?scale=100&title=Proficiency&width=150&color=D29922&suffix=%25" alt="JavaScript" />
+    </td>
+    <td width="25%" align="center" style="background: linear-gradient(145deg, #161B22, #0D1117); border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #79C0FF; margin: 0 0 8px 0;">UI/UX Design</h4>
+      <p style="color: #8B949E; font-size: 13px; margin: 0 0 12px 0;">Clean & Intuitive Interfaces</p>
+      <img src="https://progress-bar.dev/80/?scale=100&title=Proficiency&width=150&color=79C0FF&suffix=%25" alt="UI Design" />
+    </td>
+  </tr>
 </table>
 
----
+<!-- ============================================================================
+  SECTION 5: FEATURED PROJECTS (Premium Card Layout)
+  ============================================================================ -->
 
-# Featured Work
+<br />
+<h3 style="color: #F0F6FC; border-bottom: 1px solid #30363D; padding-bottom: 8px;">🚀 Featured Projects</h3>
+<p align="center">
+  <img src="./assets/projects.svg" width="100%" alt="Projects Showcase" style="border-radius: 12px; margin-bottom: 16px;" />
+</p>
 
-<table>
+<!-- PROJECT 1 -->
+<details style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px; margin-bottom: 16px; cursor: pointer;">
+  <summary style="font-size: 20px; font-weight: 600; color: #F0F6FC; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+    <span>🌟 LUMAAN Perfumes <span style="font-size: 14px; color: #8B949E; font-weight: 400; margin-left: 12px;">| Luxury E-Commerce Experience</span></span>
+    <span style="color: #58A6FF;">▼ Click to Expand</span>
+  </summary>
+  <hr style="border: 0; border-top: 1px solid #30363D; margin: 16px 0;" />
+  <table style="width: 100%;">
+    <tr>
+      <td width="60%" style="vertical-align: top; padding-right: 20px;">
+        <p style="color: #F0F6FC; line-height: 1.6;">A premium, responsive website inspired by Arabian and French fragrance brands, engineered with an emphasis on luxury branding, smooth animations, and an immersive shopping experience.</p>
+        <h4 style="color: #8B949E; font-size: 14px; margin-bottom: 8px;">✨ Key Features</h4>
+        <ul style="color: #F0F6FC; font-size: 14px; line-height: 1.8; margin-top: 0;">
+          <li>Premium Luxury UI Design & Elegant Branding</li>
+          <li>Fully Responsive, Mobile-First Layout</li>
+          <li>Smooth CSS Animations & Transitions</li>
+          <li>Modern Product Showcase Architecture</li>
+        </ul>
+        <h4 style="color: #8B949E; font-size: 14px; margin-bottom: 8px;">🛠 Technology</h4>
+        <p>
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+        </p>
+        <h4 style="color: #8B949E; font-size: 14px; margin-bottom: 8px;">🔮 Future Roadmap</h4>
+        <ul style="color: #8B949E; font-size: 13px; line-height: 1.6; margin-top: 0;">
+          <li>User Authentication & Order Tracking</li>
+          <li>Advanced Product Search & Wishlist</li>
+          <li>Payment Gateway Integration</li>
+        </ul>
+        <br />
+        <a href="https://lumaanperfumes.in" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2563EB?style=for-the-badge" alt="Live Demo" style="border-radius: 6px;" />
+        </a>
+        <a href="https://github.com/mujtabaabdulmannan" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/📂_Source_Code-181717?style=for-the-badge&logo=github" alt="Source Code" style="border-radius: 6px;" />
+        </a>
+      </td>
+      <td width="40%" align="center" style="vertical-align: top;">
+        <!-- ASSET: High-quality screenshot -->
+        <img src="./assets/screenshots/lumaan-home.png" width="100%" alt="LUMAAN Perfumes" style="border-radius: 8px; border: 1px solid #30363D; box-shadow: 0 8px 24px rgba(0,0,0,0.3);" />
+      </td>
+    </tr>
+  </table>
+</details>
 
-<tr>
+<!-- PROJECT 2 -->
+<details style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px; margin-bottom: 16px; cursor: pointer;">
+  <summary style="font-size: 20px; font-weight: 600; color: #F0F6FC; list-style: none; display: flex; align-items: center; justify-content: space-between;">
+    <span>💎 Pearl Beauty Parlour <span style="font-size: 14px; color: #8B949E; font-weight: 400; margin-left: 12px;">| Professional Business Website</span></span>
+    <span style="color: #58A6FF;">▼ Click to Expand</span>
+  </summary>
+  <hr style="border: 0; border-top: 1px solid #30363D; margin: 16px 0;" />
+  <table style="width: 100%;">
+    <tr>
+      <td width="40%" align="center" style="vertical-align: top;">
+        <!-- ASSET: High-quality screenshot -->
+        <img src="./assets/screenshots/pearl-home.png" width="100%" alt="Pearl Beauty Parlour" style="border-radius: 8px; border: 1px solid #30363D; box-shadow: 0 8px 24px rgba(0,0,0,0.3);" />
+      </td>
+      <td width="60%" style="vertical-align: top; padding-left: 20px;">
+        <p style="color: #F0F6FC; line-height: 1.6;">A modern, appointment-focused business website designed to establish an elegant online presence for a beauty salon while providing a clean, customer-focused user experience.</p>
+        <h4 style="color: #8B949E; font-size: 14px; margin-bottom: 8px;">✨ Key Features</h4>
+        <ul style="color: #F0F6FC; font-size: 14px; line-height: 1.8; margin-top: 0;">
+          <li>Elegant Business Interface & Professional Branding</li>
+          <li>Appointment-Focused User Journey</li>
+          <li>Mobile-First Responsive Layout</li>
+          <li>Comprehensive Service Showcase</li>
+        </ul>
+        <h4 style="color: #8B949E; font-size: 14px; margin-bottom: 8px;">🛠 Technology</h4>
+        <p>
+          <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" alt="HTML5" />
+          <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" alt="CSS3" />
+          <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" alt="JavaScript" />
+        </p>
+        <h4 style="color: #8B949E; font-size: 14px; margin-bottom: 8px;">🔮 Future Roadmap</h4>
+        <ul style="color: #8B949E; font-size: 13px; line-height: 1.6; margin-top: 0;">
+          <li>Online Booking System & Admin Dashboard</li>
+          <li>Gallery Management & Customer Reviews</li>
+          <li>Online Consultation Feature</li>
+        </ul>
+        <br />
+        <a href="https://pearlbeautyparlour.netlify.app" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-16A34A?style=for-the-badge" alt="Live Demo" style="border-radius: 6px;" />
+        </a>
+        <a href="https://github.com/mujtabaabdulmannan" style="text-decoration: none;">
+          <img src="https://img.shields.io/badge/📂_Source_Code-181717?style=for-the-badge&logo=github" alt="Source Code" style="border-radius: 6px;" />
+        </a>
+      </td>
+    </tr>
+  </table>
+</details>
 
-<td width="50%">
+<!-- ============================================================================
+  SECTION 6: TECHNOLOGY STACK
+  ============================================================================ -->
 
-## 🌟 LUMAAN Perfumes
+<br />
+<h3 style="color: #F0F6FC; border-bottom: 1px solid #30363D; padding-bottom: 8px;">🛠️ Technology Stack</h3>
+<p align="center">
+  <img src="./assets/techstack.svg" width="100%" alt="Tech Stack Visual" style="border-radius: 12px; margin-bottom: 16px;" />
+</p>
 
-Luxury perfume website inspired by premium Arabian and French fragrance brands.
+<p align="center">
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" height="50" alt="HTML5" style="margin: 0 12px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" height="50" alt="CSS3" style="margin: 0 12px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="50" height="50" alt="JavaScript" style="margin: 0 12px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" width="50" height="50" alt="Git" style="margin: 0 12px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="50" height="50" alt="GitHub" style="margin: 0 12px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" width="50" height="50" alt="VS Code" style="margin: 0 12px;" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-original.svg" width="50" height="50" alt="Photoshop" style="margin: 0 12px;" />
+</p>
 
-### Highlights
+<!-- ============================================================================
+  SECTION 7: LEARNING TIMELINE & WORKFLOW
+  ============================================================================ -->
 
-- Premium User Interface
-- Responsive Design
-- Luxury Branding
-- Elegant Shopping Experience
-- Modern Product Showcase
-
-### Technology
-
-HTML5
-
-CSS3
-
-JavaScript
-
-<br>
-
-<a href="https://lumaanperfumes.in">
-
-<img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-2563EB?style=for-the-badge"/>
-
-</a>
-
-</td>
-
-<td width="50%">
-
-## 💎 Pearl Beauty Parlour
-
-Professional salon website designed with a modern appointment-focused user experience.
-
-### Highlights
-
-- Responsive Layout
-- Elegant Business Design
-- Customer-focused Experience
-- Professional Branding
-- Mobile Friendly
-
-### Technology
-
-HTML5
-
-CSS3
-
-JavaScript
-
-<br>
-
-<a href="https://pearlbeautyparlour.netlify.app">
-
-<img src="https://img.shields.io/badge/🌐_Live_Demo-Visit_Website-16A34A?style=for-the-badge"/>
-
-</a>
-
-</td>
-
-</tr>
-
+<br />
+<table style="width: 100%; border-collapse: separate; border-spacing: 0 16px;">
+  <tr>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 24px; vertical-align: top;">
+      <h3 style="color: #58A6FF; margin-top: 0;">📈 Learning Timeline</h3>
+      <img src="./assets/timeline.svg" width="100%" alt="Timeline" style="border-radius: 8px; margin-bottom: 16px;" />
+      <ul style="color: #F0F6FC; font-size: 14px; line-height: 1.8;">
+        <li><span style="color: #3FB950;">✔</span> <strong>Stage 1:</strong> HTML5, CSS3, JS Fundamentals, Git</li>
+        <li><span style="color: #D29922;">◐</span> <strong>Stage 2:</strong> Advanced JS, WCAG Accessibility, Performance</li>
+        <li><span style="color: #8B949E;">○</span> <strong>Stage 3:</strong> React.js, REST APIs, Software Internship</li>
+      </ul>
+    </td>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 24px; vertical-align: top;">
+      <h3 style="color: #58A6FF; margin-top: 0;">🔄 Development Workflow</h3>
+      <img src="./assets/workflow.svg" width="100%" alt="Workflow" style="border-radius: 8px; margin-bottom: 16px;" />
+      <p style="color: #8B949E; font-size: 14px; line-height: 1.6;">
+        Research → Planning → Wireframing → UI Design → Frontend Development → Responsive Testing → Performance Optimization → Deployment → Continuous Improvement
+      </p>
+    </td>
+  </tr>
 </table>
 
----
-<!-- ========================================================= -->
-<!--                 ENGINEERING DASHBOARD                     -->
-<!-- ========================================================= -->
+<!-- ============================================================================
+  SECTION 8: ENGINEERING PHILOSOPHY
+  ============================================================================ -->
 
-# Engineering Dashboard
+<br />
+<p align="center">
+  <img src="./assets/philosophy.svg" width="100%" alt="Engineering Philosophy" style="border-radius: 12px;" />
+</p>
 
-<table>
-
-<tr>
-
-<td width="33%">
-
-### 🎓 Education
-
-```yaml
-Degree:
-  B.E. Information Technology
-
-Status:
-  Second Year Student
-
-Institution:
-  Engineering Program
-
-Objective:
-  Build strong software engineering
-  fundamentals through practical
-  project-based learning.
-```
-
-</td>
-
-<td width="33%">
-
-### 🚀 Current Focus
-
-```yaml
-Primary:
-  Frontend Development
-
-Improving:
-  JavaScript
-
-Practicing:
-  Responsive UI
-
-Exploring:
-  Accessibility
-
-Building:
-  Real World Projects
-```
-
-</td>
-
-<td width="33%">
-
-### 🎯 Career Vision
-
-```yaml
-Goal:
-  Software Engineer
-
-Interests:
-  Frontend Engineering
-
-Learning:
-  Modern Web Development
-
-Future:
-  Open Source
-  Freelancing
-  Internship
-```
-
-</td>
-
-</tr>
-
+<table style="width: 100%; border-collapse: separate; border-spacing: 12px 0;">
+  <tr>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #F0F6FC; margin-top: 0;">🧠 Problem Solving</h4>
+      <p style="color: #8B949E; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Breaking down complex ideas into simple, user-friendly solutions that provide real value.</p>
+    </td>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #F0F6FC; margin-top: 0;">🎨 User First</h4>
+      <p style="color: #8B949E; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Every interface must be intuitive, accessible, and visually balanced for the best experience.</p>
+    </td>
+  </tr>
+  <tr>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #F0F6FC; margin-top: 0;">⚡ Performance</h4>
+      <p style="color: #8B949E; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Fast-loading, responsive websites create better user experiences and higher engagement.</p>
+    </td>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 20px;">
+      <h4 style="color: #F0F6FC; margin-top: 0;">📈 Growth Mindset</h4>
+      <p style="color: #8B949E; font-size: 14px; line-height: 1.6; margin-bottom: 0;">Learning never stops. Every project is an opportunity to refine my engineering practices.</p>
+    </td>
+  </tr>
 </table>
 
----
+<!-- ============================================================================
+  SECTION 9: GITHUB ANALYTICS
+  ============================================================================ -->
 
-# Engineering Metrics
+<br />
+<h3 style="color: #F0F6FC; border-bottom: 1px solid #30363D; padding-bottom: 8px;">📊 GitHub Analytics</h3>
 
-<table>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=mujtabaabdulmannan&theme=github-dark-blue&hide_border=true&border_radius=12" alt="GitHub Streak" style="max-width: 100%;" />
+</p>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mujtabaabdulmannan&theme=github-dark&hide_border=true&border_radius=12" alt="Contribution Graph" style="max-width: 100%;" />
+</p>
+<p align="center">
+  <img src="https://komarev.com/ghpvc?username=mujtabaabdulmannan&color=58A6FF&style=for-the-badge" alt="Profile Views" />
+</p>
 
-<tr>
+<!-- ============================================================================
+  SECTION 10: 2026 ROADMAP & ACHIEVEMENTS
+  ============================================================================ -->
 
-<td width="50%">
-
-## Frontend Development
-
-█████████░ 90%
-
-Building responsive and modern web interfaces using HTML, CSS and JavaScript.
-
-</td>
-
-<td width="50%">
-
-## Responsive Design
-
-██████████ 95%
-
-Designing layouts that adapt across desktop, tablet and mobile devices.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%">
-
-## JavaScript
-
-███████░░░ 70%
-
-Strengthening fundamentals through practical frontend projects.
-
-</td>
-
-<td width="50%">
-
-## UI Design
-
-█████████░ 90%
-
-Creating clean, intuitive and visually balanced user interfaces.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%">
-
-## Git
-
-███████░░░ 70%
-
-Version control and collaborative workflow.
-
-</td>
-
-<td width="50%">
-
-## GitHub
-
-███████░░░ 70%
-
-Repository management and project documentation.
-
-</td>
-
-</tr>
-
+<br />
+<table style="width: 100%; border-collapse: separate; border-spacing: 0 16px;">
+  <tr>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 24px;">
+      <h3 style="color: #58A6FF; margin-top: 0;">🏆 Current Milestones</h3>
+      <ul style="color: #F0F6FC; font-size: 15px; line-height: 2;">
+        <li>✔ Built and deployed <strong>5+ real-world</strong> responsive websites</li>
+        <li>✔ Mastered core <strong>HTML, CSS, and JavaScript</strong> fundamentals</li>
+        <li>✔ Developed <strong>2 production-quality</strong> live projects (LUMAAN & Pearl)</li>
+        <li>✔ Actively learning <strong>Advanced JS & Accessibility</strong> standards</li>
+      </ul>
+    </td>
+    <td width="50%" style="background-color: #161B22; border: 1px solid #30363D; border-radius: 12px; padding: 24px;">
+      <h3 style="color: #3FB950; margin-top: 0;">🎯 2026 Professional Roadmap</h3>
+      <ul style="color: #F0F6FC; font-size: 15px; line-height: 2;">
+        <li>🚀 Master <strong>React.js</strong> and modern frontend architecture</li>
+        <li>🚀 Build <strong>15+ quality projects</strong> with reusable components</li>
+        <li>🚀 Secure a <strong>Software Engineering Internship</strong></li>
+        <li>🚀 Gain <strong>freelance experience</strong> and contribute to Open Source</li>
+      </ul>
+    </td>
+  </tr>
 </table>
 
----
+<!-- ============================================================================
+  SECTION 11: PROFESSIONAL CONTACT
+  ============================================================================ -->
 
-# Current Learning Journey
+<br />
+<div align="center" style="background: linear-gradient(145deg, #161B22, #0D1117); border: 1px solid #30363D; border-radius: 16px; padding: 40px 20px; margin-top: 24px;">
+  <h2 style="color: #F0F6FC; margin-top: 0; font-size: 28px;">Let's Build Something Great</h2>
+  <p style="color: #8B949E; font-size: 16px; max-width: 500px; margin: 0 auto 24px auto; line-height: 1.6;">
+    I'm always open to discussing new projects, frontend engineering opportunities, freelance work, or creative ideas.
+  </p>
+  
+  <p style="margin-bottom: 0;">
+    <a href="https://github.com/mujtabaabdulmannan" style="text-decoration: none; margin: 0 8px;">
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" style="border-radius: 6px;" />
+    </a>
+    <a href="https://linkedin.com/in/mujtabaabdulmannan" style="text-decoration: none; margin: 0 8px;">
+      <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" style="border-radius: 6px;" />
+    </a>
+    <a href="mailto:mrmujtabaabdulmannan@gmail.com" style="text-decoration: none; margin: 0 8px;">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" style="border-radius: 6px;" />
+    </a>
+  </p>
+</div>
 
-<table>
+<!-- ============================================================================
+  SECTION 12: FOOTER
+  ============================================================================ -->
 
-<tr>
-
-<td>
-
-✅ Advanced JavaScript
-
-</td>
-
-<td>
-
-🟡 Accessibility (WCAG)
-
-</td>
-
-<td>
-
-🟡 Performance Optimization
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-🟡 Git Workflow
-
-</td>
-
-<td>
-
-🟡 Frontend Architecture
-
-</td>
-
-<td>
-
-🟡 Engineering Best Practices
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Engineering Principles
-
-<table>
-
-<tr>
-
-<td>
-
-💡 Build with Purpose
-
-Every project should solve a real problem and provide value to users.
-
-</td>
-
-<td>
-
-🧹 Keep It Clean
-
-Readable, maintainable and scalable code is always the priority.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-📈 Continuous Learning
-
-Technology evolves every day, and consistent learning is part of engineering.
-
-</td>
-
-<td>
-
-🎨 User First
-
-Great software combines functionality, performance and thoughtful design.
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Development Workflow
-
-```text
- Research
-     │
-     ▼
- Planning
-     │
-     ▼
- UI / UX Design
-     │
-     ▼
- Frontend Development
-     │
-     ▼
- Testing
-     │
-     ▼
- Optimization
-     │
-     ▼
- Deployment
-     │
-     ▼
- Continuous Improvement
-```
-
----
-<!-- ========================================================= -->
-<!--                     TECH STACK                            -->
-<!-- ========================================================= -->
-
-# Technology Stack
-
+<br />
 <p align="center">
-
-<img src="https://skillicons.dev/icons?i=html,css,js,git,github,vscode&theme=dark" />
-
-</p>
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-## Frontend
-
-```text
-HTML5
-
-Semantic Structure
-
-Responsive Layouts
-
-Modern Components
-
-Accessibility
-
-Performance-Oriented Design
-```
-
-</td>
-
-<td width="50%">
-
-## Styling
-
-```text
-CSS3
-
-Responsive Design
-
-Flexbox
-
-Grid
-
-Animations
-
-Modern UI
-```
-
-</td>
-
-</tr>
-
-<tr>
-
-<td width="50%">
-
-## Programming
-
-```text
-JavaScript
-
-DOM Manipulation
-
-ES6 Fundamentals
-
-Interactive UI
-
-Frontend Logic
-```
-
-</td>
-
-<td width="50%">
-
-## Tools
-
-```text
-Git
-
-GitHub
-
-VS Code
-
-Adobe Photoshop
-
-Canva
-```
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Currently Learning
-
-<table>
-
-<tr>
-
-<td>
-
-🟢 Advanced JavaScript
-
-</td>
-
-<td>
-
-🟢 Responsive UI Architecture
-
-</td>
-
-<td>
-
-🟢 Accessibility (WCAG)
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-🟢 Git Workflow
-
-</td>
-
-<td>
-
-🟢 Performance Optimization
-
-</td>
-
-<td>
-
-🟢 Frontend Best Practices
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# GitHub Analytics
-
-<p align="center">
-
-<img
-height="170"
-src="https://github-readme-stats.vercel.app/api?username=mujtabaabdulmannan&show_icons=true&theme=github_dark&hide_border=true"/>
-
-<img
-height="170"
-src="https://github-readme-stats.vercel.app/api/top-langs/?username=mujtabaabdulmannan&layout=compact&theme=github_dark&hide_border=true"/>
-
+  <img src="./assets/footer.svg" width="100%" alt="Footer Banner" style="border-radius: 12px;" />
 </p>
 
 <p align="center">
-
-<img
-src="https://streak-stats.demolab.com?user=mujtabaabdulmannan&theme=github-dark-blue&hide_border=true"/>
-
+  <sub style="color: #8B949E; font-size: 13px; line-height: 1.8;">
+    Designed & Engineered by <strong style="color: #F0F6FC;">Mujtaba Abdul Mannan</strong><br />
+    <em>"Building better digital experiences, one project at a time."</em><br />
+    Frontend Web Developer • Information Technology Engineering Student • Hyderabad, India
+  </sub>
 </p>
 
 <p align="center">
-
-<img
-src="https://github-readme-activity-graph.vercel.app/graph?username=mujtabaabdulmannan&theme=github-dark&hide_border=true"/>
-
-</p>
-
----
-
-# 2026 Engineering Goals
-
-<table>
-
-<tr>
-
-<td width="33%">
-
-### Learning
-
-- Master JavaScript
-- Learn React
-- Improve Git Workflow
-- Study Frontend Architecture
-
-</td>
-
-<td width="33%">
-
-### Projects
-
-- Build 15+ Quality Projects
-- Enhance Portfolio
-- Improve UI Design
-- Create Reusable Components
-
-</td>
-
-<td width="33%">
-
-### Career
-
-- Secure Software Internship
-- Gain Freelance Experience
-- Contribute to Open Source
-- Continue Continuous Learning
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Engineering Philosophy
-
-> **"Great software is built with curiosity, refined through iteration, and measured by the experience it creates for users."**
-
-I believe every project is an opportunity to improve—not only as a developer, but also as a problem solver. My focus is on writing clean, maintainable frontend code while creating responsive and user-friendly digital experiences.
-
----
-
-# Let's Connect
-
-<p align="center">
-
-<a href="https://www.linkedin.com/in/mujtabaabdulmannan">
-
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-
-</a>
-
-<a href="https://github.com/mujtabaabdulmannan">
-
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-
-</a>
-
-<a href="mailto:mrmujtabaabdulmannan@gmail.com">
-
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-
-</a>
-
-<a href="https://lumaanperfumes.in">
-
-<img src="https://img.shields.io/badge/LUMAAN-Website-2563EB?style=for-the-badge"/>
-
-</a>
-
-</p>
-
----
-
-<p align="center">
-
-<img src="./assets/footer.svg" width="100%" alt="Footer"/>
-
-</p>
-
-<p align="center">
-
-<sub>
-Designed & Developed by <strong>Mujtaba Abdul Mannan</strong><br>
-Building modern digital experiences through continuous learning and thoughtful engineering.
-</sub>
-
-</p>
-<!-- =============================================================== -->
-<!--                      FEATURED PROJECTS                          -->
-<!-- =============================================================== -->
-
-<br>
-
-<h1 align="center">
-
-Featured Engineering Projects
-
-</h1>
-
-<p align="center">
-
-Projects focused on creating modern, responsive and user-centered web experiences.
-
-</p>
-
----
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-<h2 align="center">
-
-🌟 LUMAAN Perfumes
-
-</h2>
-
-<p align="center">
-
-<b>Luxury Perfume E-Commerce Experience</b>
-
-</p>
-
-<p>
-
-A premium perfume website inspired by Arabian and French fragrance brands, designed with an emphasis on luxury branding, responsive layouts and an immersive shopping experience.
-
-</p>
-
-### Key Features
-
-✔ Premium Luxury UI
-
-✔ Responsive Design
-
-✔ Smooth Animations
-
-✔ Shopping Experience
-
-✔ Product Showcase
-
-✔ Mobile Optimized
-
-✔ Modern Navigation
-
-✔ Elegant Branding
-
----
-
-### Technology
-
-<p>
-
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-
-</p>
-
----
-
-### Live Project
-
-<a href="https://lumaanperfumes.in">
-
-<img src="https://img.shields.io/badge/Visit_Website-2563EB?style=for-the-badge"/>
-
-</a>
-
-<br><br>
-
-<a href="https://github.com/mujtabaabdulmannan">
-
-<img src="https://img.shields.io/badge/Source_Code-181717?style=for-the-badge&logo=github"/>
-
-</a>
-
----
-
-### Future Improvements
-
-• User Authentication
-
-• Product Search
-
-• Wishlist
-
-• Order Tracking
-
-• Payment Gateway
-
-• Admin Dashboard
-
-</td>
-
-<td width="50%">
-
-<p align="center">
-
-<img src="./assets/screenshots/lumaan-home.png" width="100%">
-
-</p>
-
-</td>
-
-</tr>
-
-</table>
-
-<br>
-
----
-
-<br>
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-<p align="center">
-
-<img src="./assets/screenshots/pearl-home.png" width="100%">
-
-</p>
-
-</td>
-
-<td width="50%">
-
-<h2 align="center">
-
-💎 Pearl Beauty Parlour
-
-</h2>
-
-<p align="center">
-
-<b>Professional Beauty Salon Website</b>
-
-</p>
-
-<p>
-
-A modern business website designed to establish an elegant online presence for a beauty salon while providing a clean appointment-focused user experience.
-
-</p>
-
-### Key Features
-
-✔ Elegant Interface
-
-✔ Appointment Focused
-
-✔ Responsive Layout
-
-✔ Professional Branding
-
-✔ Mobile Friendly
-
-✔ Service Showcase
-
-✔ Business Information
-
-✔ Contact Experience
-
----
-
-### Technology
-
-<p>
-
-<img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white"/>
-
-<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black"/>
-
-</p>
-
----
-
-### Live Project
-
-<a href="https://pearlbeautyparlour.netlify.app">
-
-<img src="https://img.shields.io/badge/Visit_Website-16A34A?style=for-the-badge"/>
-
-</a>
-
-<br><br>
-
-<a href="https://github.com/mujtabaabdulmannan">
-
-<img src="https://img.shields.io/badge/Source_Code-181717?style=for-the-badge&logo=github"/>
-
-</a>
-
----
-
-### Future Improvements
-
-• Online Booking
-
-• Gallery Management
-
-• Customer Reviews
-
-• Admin Dashboard
-
-• Online Consultation
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Engineering Highlights
-
-<table>
-
-<tr>
-
-<td align="center">
-
-## 🌍
-
-Projects Built
-
-### 5+
-
-Real-world websites
-
-</td>
-
-<td align="center">
-
-## 💻
-
-Frontend
-
-Modern UI
-
-Responsive Design
-
-</td>
-
-<td align="center">
-
-## 🎨
-
-Design
-
-Luxury Interfaces
-
-Clean UX
-
-</td>
-
-<td align="center">
-
-## 📈
-
-Goal
-
-Continuous Improvement
-
-Real Experience
-
-</td>
-
-</tr>
-
-</table>
-
----
-<!-- ========================================================= -->
-<!--                 ENGINEERING EXCELLENCE                    -->
-<!-- ========================================================= -->
-
-<br>
-
-<h1 align="center">
-
-Engineering Excellence
-
-</h1>
-
-<p align="center">
-
-My approach to learning software engineering focuses on building practical projects,
-writing maintainable code, and continuously improving through hands-on experience.
-
-</p>
-
----
-
-<table>
-
-<tr>
-
-<td width="33%">
-
-<h3 align="center">💻</h3>
-
-<h3 align="center">Build</h3>
-
-<p align="center">
-
-Create modern websites with
-clean architecture,
-responsive layouts
-and polished interfaces.
-
-</p>
-
-</td>
-
-<td width="33%">
-
-<h3 align="center">📚</h3>
-
-<h3 align="center">Learn</h3>
-
-<p align="center">
-
-Continuously strengthen
-JavaScript,
-frontend engineering,
-Git workflow,
-and accessibility.
-
-</p>
-
-</td>
-
-<td width="33%">
-
-<h3 align="center">🚀</h3>
-
-<h3 align="center">Improve</h3>
-
-<p align="center">
-
-Every project is an
-opportunity to improve
-design thinking,
-problem solving
-and development practices.
-
-</p>
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Engineering Roadmap
-
-<table>
-
-<tr>
-
-<td width="25%">
-
-## 🌱 Stage 1
-
-Frontend Foundations
-
-✅ HTML
-
-✅ CSS
-
-✅ JavaScript
-
-✅ Responsive Design
-
-</td>
-
-<td width="25%">
-
-## ⚙ Stage 2
-
-Current Focus
-
-JavaScript
-
-Performance
-
-Accessibility
-
-Git Workflow
-
-</td>
-
-<td width="25%">
-
-## 🚀 Stage 3
-
-Next Goals
-
-React
-
-REST APIs
-
-Modern Frontend
-
-Reusable Components
-
-</td>
-
-<td width="25%">
-
-## 🎯 Stage 4
-
-Career
-
-Internship
-
-Freelancing
-
-Open Source
-
-Software Engineer
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Development Process
-
-```text
-
-Research
-   │
-   ▼
-
-Planning
-   │
-   ▼
-
-Wireframing
-   │
-   ▼
-
-UI Design
-   │
-   ▼
-
-Frontend Development
-   │
-   ▼
-
-Responsive Testing
-   │
-   ▼
-
-Performance Optimization
-   │
-   ▼
-
-Deployment
-   │
-   ▼
-
-Continuous Improvement
-
-```
-
----
-
-# Core Values
-
-<table>
-
-<tr>
-
-<td>
-
-### 🧠 Problem Solving
-
-I enjoy breaking down complex ideas into simple, user-friendly solutions.
-
-</td>
-
-<td>
-
-### 🎨 User Experience
-
-Every interface should be intuitive, accessible and visually balanced.
-
-</td>
-
-</tr>
-
-<tr>
-
-<td>
-
-### ⚡ Performance
-
-Fast-loading, responsive websites create better user experiences.
-
-</td>
-
-<td>
-
-### 📈 Growth Mindset
-
-Learning never stops. Every project teaches something new.
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# 2026 Professional Goals
-
-- ✅ Master Advanced JavaScript
-- ✅ Learn React
-- ✅ Build 15+ quality frontend projects
-- ✅ Secure a software engineering internship
-- ✅ Gain freelance development experience
-- ✅ Contribute to open-source projects
-- ✅ Strengthen frontend architecture knowledge
-
----
-
-# Beyond Code
-
-<table>
-
-<tr>
-
-<td width="50%">
-
-### What motivates me
-
-- Building real-world projects
-- Solving practical problems
-- Improving UI/UX quality
-- Learning modern engineering practices
-- Creating meaningful digital experiences
-
-</td>
-
-<td width="50%">
-
-### Interests
-
-- Frontend Engineering
-- User Interface Design
-- Web Performance
-- Product Design
-- Software Development
-- Open Source
-
-</td>
-
-</tr>
-
-</table>
-
----
-
-# Connect With Me
-
-<p align="center">
-
-<a href="https://www.linkedin.com/in/mujtabaabdulmannan">
-<img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
-
-<a href="https://github.com/mujtabaabdulmannan">
-<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/>
-</a>
-
-<a href="mailto:mrmujtabaabdulmannan@gmail.com">
-<img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/>
-</a>
-
-<a href="https://lumaanperfumes.in">
-<img src="https://img.shields.io/badge/LUMAAN-Website-2563EB?style=for-the-badge"/>
-</a>
-
-<a href="https://pearlbeautyparlour.netlify.app">
-<img src="https://img.shields.io/badge/Pearl_Beauty-Website-16A34A?style=for-the-badge"/>
-</a>
-
-</p>
-
----
-
-<p align="center">
-
-<i>
-"Building better digital experiences, one project at a time."
-</i>
-
-</p>
-
-<p align="center">
-
-<img src="./assets/footer.svg" width="100%" alt="Footer"/>
-
-</p>
-
-<p align="center">
-
-<sub>
-
-Designed & Developed by <strong>Mujtaba Abdul Mannan</strong>
-
-<br>
-
-Frontend Web Developer • Information Technology Engineering Student
-
-</sub>
-
+  <img src="https://img.shields.io/badge/Crafted_with-Passion_%26_Precision-58A6FF?style=for-the-badge" alt="Crafted with Passion" style="border-radius: 6px;" />
 </p>
