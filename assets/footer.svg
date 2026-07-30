@@ -1,1 +1,70 @@
-
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="280" viewBox="0 0 1600 280">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0D1117"/>
+      <stop offset="50%" stop-color="#0F141B"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#F0F6FC"/>
+      <stop offset="50%" stop-color="#79C0FF"/>
+      <stop offset="100%" stop-color="#F0F6FC"/>
+    </linearGradient>
+    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.15"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161B22" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#21262D" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#161B22" stop-opacity="0.6"/>
+    </linearGradient>
+  </defs>
+  
+  <rect width="1600" height="280" fill="url(#bg)"/>
+  
+  <rect width="1600" height="280" fill="url(#wave1)"/>
+  
+  <path d="M0,240 Q400,220 800,240 T1600,240 L1600,280 L0,280 Z" fill="url(#wave2)"/>
+  <path d="M0,250 Q400,235 800,250 T1600,250 L1600,280 L0,280 Z" fill="#0D1117" opacity="0.9"/>
+  
+  <text x="800" y="50" font-family="Arial, sans-serif" font-size="26" font-weight="600" fill="url(#textGrad)" text-anchor="middle">Thank you for visiting.</text>
+  
+  <text x="800" y="75" font-family="Arial, sans-serif" font-size="12" fill="#8B949E" text-anchor="middle">Thanks for taking the time to explore my work.</text>
+  
+  <text x="800" y="95" font-family="Arial, sans-serif" font-size="11" fill="#79C0FF" text-anchor="middle" opacity="0.9">Let's build meaningful digital experiences together.</text>
+  
+  <line x1="720" y1="110" x2="880" y2="110" stroke="#30363D" stroke-width="1"/>
+  <circle cx="800" cy="110" r="3" fill="#58A6FF"/>
+  
+  <g fill="#161B22" stroke="#30363D" stroke-width="1">
+    <circle cx="695" cy="145" r="18"/>
+    <circle cx="765" cy="145" r="18"/>
+    <circle cx="835" cy="145" r="18"/>
+    <circle cx="905" cy="145" r="18"/>
+  </g>
+  
+  <g fill="#F0F6FC">
+    <path d="M695,138 Q688,138 688,142 L688,147 Q688,152 695,152 L700,152 Q700,152 700,149 L697,149 Q697,149 697,147 L700,147 Q700,147 700,145 L695,145 Q695,145 695,142 L698,142 Q698,142 698,144 L700,144 Q700,144 700,142 L695,142 Q695,142 695,138 Z" opacity="0.9"/>
+    <text x="765" y="149" font-family="Arial" font-size="10" fill="#F0F6FC" text-anchor="middle">in</text>
+    <text x="835" y="149" font-family="Arial" font-size="10" fill="#F0F6FC" text-anchor="middle">@</text>
+    <text x="905" y="149" font-family="Arial" font-size="10" fill="#F0F6FC" text-anchor="middle">W</text>
+  </g>
+  
+  <g font-family="Arial, sans-serif" font-size="7" fill="#8B949E" text-anchor="middle">
+    <text x="695" y="165">GITHUB</text>
+    <text x="765" y="165">LINKEDIN</text>
+    <text x="835" y="165">EMAIL</text>
+    <text x="905" y="165">PORTFOLIO</text>
+  </g>
+  
+  <text x="800" y="200" font-family="Arial, sans-serif" font-size="10" fill="#8B949E" text-anchor="middle" font-style="italic">"Great software is built through curiosity, continuous learning,</text>
+  <text x="800" y="215" font-family="Arial, sans-serif" font-size="10" fill="#8B949E" text-anchor="middle" font-style="italic">and thoughtful engineering."</text>
+  
+  <text x="800" y="235" font-family="Arial, sans-serif" font-size="6.5" fill="#8B949E" text-anchor="middle" letter-spacing="1.5">FRONTEND WEB DEVELOPER  •  IT ENGINEERING STUDENT  •  HYDERABAD, INDIA</text>
+  
+  <text x="800" y="260" font-family="Arial, sans-serif" font-size="7" fill="#F0F6FC" text-anchor="middle" letter-spacing="1.8">DESIGNED &amp; DEVELOPED BY <tspan fill="#58A6FF" font-weight="bold">MUJTABA ABDUL MANNAN</tspan></text>
+  
+  <circle cx="800" cy="248" r="2" fill="#58A6FF"/>
+</svg>
