@@ -1,1 +1,677 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" style="background:#0D1117;font-family:'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif">
+  
+  <!-- ============================================ -->
+  <!-- DEFINITIONS: Gradients, Filters, Patterns    -->
+  <!-- ============================================ -->
+  <defs>
+    <!-- Background Mesh Gradients -->
+    <radialGradient id="meshGlow1" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.08">
+        <animate attributeName="stop-opacity" values="0.08;0.15;0.08" dur="20s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meshGlow2" cx="80%" cy="70%" r="55%">
+      <stop offset="0%" stop-color="#79C0FF" stop-opacity="0.06">
+        <animate attributeName="stop-opacity" values="0.06;0.12;0.06" dur="25s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meshGlow3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.04">
+        <animate attributeName="stop-opacity" values="0.04;0.08;0.04" dur="30s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
 
+    <!-- Text Gradient -->
+    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F0F6FC"/>
+      <stop offset="50%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#79C0FF"/>
+    </linearGradient>
+
+    <!-- Glass Card Gradient -->
+    <linearGradient id="cardGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21262D" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#161B22" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#21262D" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Animated Border Gradient -->
+    <linearGradient id="borderAnim" x1="0%" y1="0%" x2="200%" y2="100%">
+      <stop offset="0%" stop-color="#30363D"/>
+      <stop offset="25%" stop-color="#58A6FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#30363D"/>
+      <stop offset="75%" stop-color="#79C0FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#30363D"/>
+      <animate attributeName="x1" values="0%;-200%" dur="15s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="200%;0%" dur="15s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Scan Line Gradient -->
+    <linearGradient id="scanLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Light Streak Gradient -->
+    <linearGradient id="lightStreak" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Reflection Gradient -->
+    <linearGradient id="reflection" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0F6FC" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#F0F6FC" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.6"/>
+    </radialGradient>
+
+    <!-- Filters -->
+    <filter id="glowSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glowStrong" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="windowShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+
+    <!-- Patterns -->
+    <pattern id="blueprintGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#30363D" stroke-width="0.5" opacity="0.2"/>
+    </pattern>
+    <pattern id="fineGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#30363D" stroke-width="0.2" opacity="0.08"/>
+    </pattern>
+    <pattern id="dotPattern" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="12.5" cy="12.5" r="0.6" fill="#58A6FF" opacity="0.15"/>
+    </pattern>
+
+    <!-- Clip Paths -->
+    <clipPath id="editorClip">
+      <rect width="520" height="320" rx="12"/>
+    </clipPath>
+    <clipPath id="cardClip1">
+      <rect width="240" height="140" rx="10"/>
+    </clipPath>
+    <clipPath id="cardClip2">
+      <rect width="240" height="140" rx="10"/>
+    </clipPath>
+  </defs>
+
+  <!-- ============================================ -->
+  <!-- BACKGROUND LAYER                             -->
+  <!-- ============================================ -->
+  
+  <!-- Base background -->
+  <rect width="1280" height="640" fill="#0D1117"/>
+  
+  <!-- Blueprint grid -->
+  <rect width="1280" height="640" fill="url(#blueprintGrid)" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.3;0.5" dur="25s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Fine grid overlay -->
+  <rect width="1280" height="640" fill="url(#fineGrid)" opacity="0.3"/>
+  
+  <!-- Dot pattern -->
+  <rect width="1280" height="640" fill="url(#dotPattern)" opacity="0.4"/>
+
+  <!-- Mesh gradient overlays -->
+  <rect width="1280" height="640" fill="url(#meshGlow1)"/>
+  <rect width="1280" height="640" fill="url(#meshGlow2)"/>
+  <rect width="1280" height="640" fill="url(#meshGlow3)"/>
+
+  <!-- Animated scan line -->
+  <rect x="0" y="-100" width="1280" height="200" fill="url(#scanLine)" opacity="0.6">
+    <animate attributeName="y" values="-100;740;-100" dur="35s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Light streaks -->
+  <rect x="-300" y="150" width="600" height="2" fill="url(#lightStreak)" opacity="0.3" transform="rotate(15 300 150)">
+    <animate attributeName="x" values="-300;1600;-300" dur="40s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="-300" y="450" width="500" height="1.5" fill="url(#lightStreak)" opacity="0.2" transform="rotate(-10 200 450)">
+    <animate attributeName="x" values="-300;1600;-300" dur="45s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Technical lines -->
+  <line x1="0" y1="120" x2="1280" y2="120" stroke="#30363D" stroke-width="0.5" opacity="0.2">
+    <animate attributeName="opacity" values="0.2;0.1;0.2" dur="12s" repeatCount="indefinite"/>
+  </line>
+  <line x1="640" y1="0" x2="640" y2="640" stroke="#30363D" stroke-width="0.3" opacity="0.15"/>
+  <line x1="320" y1="0" x2="320" y2="640" stroke="#30363D" stroke-width="0.3" opacity="0.1"/>
+  <line x1="960" y1="0" x2="960" y2="640" stroke="#30363D" stroke-width="0.3" opacity="0.1"/>
+
+  <!-- Glowing blobs -->
+  <circle cx="200" cy="200" r="120" fill="#58A6FF" opacity="0.02" filter="url(#glowStrong)">
+    <animate attributeName="cx" values="200;230;200" dur="35s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="200;180;200" dur="30s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1080" cy="450" r="140" fill="#79C0FF" opacity="0.02" filter="url(#glowStrong)">
+    <animate attributeName="cx" values="1080;1050;1080" dur="32s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="450;470;450" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="640" cy="320" r="180" fill="#58A6FF" opacity="0.015" filter="url(#glowStrong)">
+    <animate attributeName="r" values="180;200;180" dur="25s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Constellation particles -->
+  <g opacity="0.5">
+    <circle cx="100" cy="220" r="1.5" fill="#58A6FF" opacity="0.6">
+      <animate attributeName="cy" values="220;205;220" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="120" r="1.2" fill="#79C0FF" opacity="0.5">
+      <animate attributeName="cx" values="300;320;300" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="340" r="1.4" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="cy" values="340;325;340" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="740" cy="180" r="1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="740;760;740" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="940" cy="300" r="1.3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="cy" values="300;315;300" dur="13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1160" cy="160" r="1.1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="1160;1140;1160" dur="15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="160" cy="520" r="1.2" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="cy" values="520;535;520" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="400" cy="620" r="1" fill="#79C0FF" opacity="0.3">
+      <animate attributeName="cx" values="400;420;400" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="620" cy="680" r="1.3" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="cy" values="680;665;680" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="580" r="1.1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="840;860;840" dur="13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1060" cy="700" r="1.2" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="cy" values="700;715;700" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1220" cy="440" r="1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="1220;1200;1220" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="240" cy="400" r="0.9" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="cy" values="400;415;400" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="560" cy="120" r="1.1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="560;580;560" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="880" cy="80" r="1.3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="cy" values="80;95;80" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Constellation connecting lines -->
+  <g stroke="#58A6FF" stroke-width="0.3" opacity="0.12">
+    <line x1="100" y1="220" x2="300" y2="120">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="10s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="120" x2="520" y2="340">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="12s" repeatCount="indefinite"/>
+    </line>
+    <line x1="520" y1="340" x2="740" y2="180">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="11s" repeatCount="indefinite"/>
+    </line>
+    <line x1="740" y1="180" x2="940" y2="300">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="13s" repeatCount="indefinite"/>
+    </line>
+    <line x1="940" y1="300" x2="1160" y2="160">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="14s" repeatCount="indefinite"/>
+    </line>
+    <line x1="160" y1="520" x2="400" y2="620">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="11s" repeatCount="indefinite"/>
+    </line>
+    <line x1="400" y1="620" x2="620" y2="680">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="10s" repeatCount="indefinite"/>
+    </line>
+    <line x1="620" y1="680" x2="840" y2="580">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="12s" repeatCount="indefinite"/>
+    </line>
+    <line x1="840" y1="580" x2="1060" y2="700">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="13s" repeatCount="indefinite"/>
+    </line>
+    <line x1="240" y1="400" x2="560" y2="120">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="15s" repeatCount="indefinite"/>
+    </line>
+    <line x1="560" y1="120" x2="880" y2="80">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="14s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Floating circles -->
+  <g opacity="0.08">
+    <circle cx="60" cy="100" r="4" fill="none" stroke="#58A6FF" stroke-width="0.6">
+      <animate attributeName="cy" values="100;85;100" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1220" cy="640" r="5" fill="none" stroke="#79C0FF" stroke-width="0.6">
+      <animate attributeName="cy" values="640;625;640" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="680" r="3" fill="none" stroke="#58A6FF" stroke-width="0.5">
+      <animate attributeName="cy" values="680;695;680" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1240" cy="120" r="4" fill="none" stroke="#79C0FF" stroke-width="0.5">
+      <animate attributeName="cy" values="120;135;120" dur="19s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- LEFT SIDE: TYPOGRAPHY & CONTENT              -->
+  <!-- ============================================ -->
+  <g transform="translate(80, 0)">
+    <!-- Accent line -->
+    <rect x="0" y="180" width="4" height="80" rx="2" fill="#58A6FF" opacity="0.9">
+      <animate attributeName="height" values="80;90;80" dur="5s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Main Name -->
+    <text x="24" y="240" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="56" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">
+      MUJTABA
+    </text>
+    <text x="24" y="305" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="56" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">
+      ABDUL
+    </text>
+    <text x="24" y="370" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="56" font-weight="800" fill="url(#textGrad)" letter-spacing="-1.5">
+      MANNAN
+    </text>
+
+    <!-- Subtitles -->
+    <text x="24" y="420" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="#58A6FF" letter-spacing="0.5">
+      Frontend Web Developer
+    </text>
+    <text x="24" y="448" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="400" fill="#8B949E" letter-spacing="0.2">
+      Information Technology Engineering Student
+    </text>
+    <text x="24" y="474" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="400" fill="#8B949E" letter-spacing="0.2">
+      Building Modern Digital Experiences
+    </text>
+
+    <!-- Bottom Statement -->
+    <line x1="24" y1="540" x2="400" y2="540" stroke="#30363D" stroke-width="1" opacity="0.4"/>
+    <text x="24" y="565" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="12" font-weight="400" fill="#8B949E" letter-spacing="0.3">
+      Building modern digital experiences through thoughtful
+    </text>
+    <text x="24" y="585" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="12" font-weight="400" fill="#8B949E" letter-spacing="0.3">
+      engineering, responsive interfaces and continuous learning.
+    </text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- RIGHT SIDE: ENGINEERING WORKSPACE            -->
+  <!-- ============================================ -->
+  
+  <!-- GitHub Analytics Widget (Floating Top Right) -->
+  <g transform="translate(1020, 60)" filter="url(#cardShadow)">
+    <animateTransform attributeName="transform" type="translate" values="1020,60;1020,55;1020,60" dur="9s" repeatCount="indefinite"/>
+    
+    <rect width="180" height="110" rx="10" fill="url(#cardGlass)" stroke="#30363D" stroke-width="1"/>
+    <rect width="180" height="110" rx="10" fill="none" stroke="url(#borderAnim)" stroke-width="1" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Widget Header -->
+    <circle cx="16" cy="16" r="3" fill="#3FB950">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="20" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" font-weight="600" fill="#8B949E" letter-spacing="0.5">GITHUB ACTIVITY</text>
+    
+    <!-- Mini Chart -->
+    <g transform="translate(16, 36)">
+      <rect x="0" y="20" width="8" height="30" rx="2" fill="#58A6FF" opacity="0.6">
+        <animate attributeName="height" values="30;40;30" dur="4s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="20;10;20" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="14" y="30" width="8" height="20" rx="2" fill="#58A6FF" opacity="0.4">
+        <animate attributeName="height" values="20;30;20" dur="5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="30;20;30" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="28" y="10" width="8" height="40" rx="2" fill="#58A6FF" opacity="0.8">
+        <animate attributeName="height" values="40;50;40" dur="4.5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="10;0;10" dur="4.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="42" y="25" width="8" height="25" rx="2" fill="#58A6FF" opacity="0.5">
+        <animate attributeName="height" values="25;35;25" dur="5.5s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="25;15;25" dur="5.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="56" y="15" width="8" height="35" rx="2" fill="#58A6FF" opacity="0.7">
+        <animate attributeName="height" values="35;45;35" dur="4.2s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="15;5;15" dur="4.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="70" y="35" width="8" height="15" rx="2" fill="#58A6FF" opacity="0.3">
+        <animate attributeName="height" values="15;25;15" dur="6s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="35;25;35" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="84" y="20" width="8" height="30" rx="2" fill="#58A6FF" opacity="0.6">
+        <animate attributeName="height" values="30;40;30" dur="4.8s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="20;10;20" dur="4.8s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="98" y="10" width="8" height="40" rx="2" fill="#58A6FF" opacity="0.9">
+        <animate attributeName="height" values="40;50;40" dur="4.1s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="10;0;10" dur="4.1s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="112" y="25" width="8" height="25" rx="2" fill="#58A6FF" opacity="0.5">
+        <animate attributeName="height" values="25;35;25" dur="5.2s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="25;15;25" dur="5.2s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="126" y="15" width="8" height="35" rx="2" fill="#58A6FF" opacity="0.7">
+        <animate attributeName="height" values="35;45;35" dur="4.6s" repeatCount="indefinite"/>
+        <animate attributeName="y" values="15;5;15" dur="4.6s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+    
+    <!-- Stats Text -->
+    <text x="16" y="90" font-family="'JetBrains Mono','SF Mono',monospace" font-size="9" fill="#8B949E">Commits: <tspan fill="#F0F6FC">1,240</tspan></text>
+    <text x="100" y="90" font-family="'JetBrains Mono','SF Mono',monospace" font-size="9" fill="#8B949E">PRs: <tspan fill="#F0F6FC">86</tspan></text>
+  </g>
+
+  <!-- Main Code Editor Window -->
+  <g transform="translate(680, 80)" filter="url(#windowShadow)">
+    <animateTransform attributeName="transform" type="translate" values="680,80;680,75;680,80" dur="8s" repeatCount="indefinite"/>
+    
+    <!-- Editor Background -->
+    <rect width="520" height="320" rx="12" fill="#161B22" stroke="#30363D" stroke-width="1"/>
+    
+    <!-- Animated Border -->
+    <rect width="520" height="320" rx="12" fill="none" stroke="url(#borderAnim)" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Glass Reflection -->
+    <rect width="520" height="320" rx="12" fill="url(#reflection)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Title Bar -->
+    <rect x="0" y="0" width="520" height="36" rx="12" fill="#0D1117"/>
+    <rect x="0" y="24" width="520" height="12" fill="#0D1117"/>
+    <line x1="0" y1="36" x2="520" y2="36" stroke="#30363D" stroke-width="1"/>
+
+    <!-- Window Controls -->
+    <circle cx="18" cy="18" r="5.5" fill="#FF5F57"/>
+    <circle cx="36" cy="18" r="5.5" fill="#FFBD2E"/>
+    <circle cx="54" cy="18" r="5.5" fill="#28C840"/>
+
+    <!-- Editor Title -->
+    <text x="260" y="22" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#8B949E" text-anchor="middle">engineer.js — Visual Studio Code</text>
+
+    <!-- Code Content -->
+    <g transform="translate(20, 56)" clip-path="url(#editorClip)">
+      <!-- Line Numbers -->
+      <g font-family="'JetBrains Mono','SF Mono','Fira Code',monospace" font-size="11" fill="#484F58" text-anchor="end">
+        <text x="20" y="16">1</text>
+        <text x="20" y="36">2</text>
+        <text x="20" y="56">3</text>
+        <text x="20" y="76">4</text>
+        <text x="20" y="96">5</text>
+        <text x="20" y="116">6</text>
+        <text x="20" y="136">7</text>
+        <text x="20" y="156">8</text>
+        <text x="20" y="176">9</text>
+        <text x="20" y="196">10</text>
+        <text x="20" y="216">11</text>
+        <text x="20" y="236">12</text>
+      </g>
+
+      <!-- Code Lines -->
+      <g font-family="'JetBrains Mono','SF Mono','Fira Code',monospace" font-size="12">
+        <!-- Line 1 -->
+        <text x="32" y="16">
+          <tspan fill="#FF7B72">const</tspan>
+          <tspan fill="#F0F6FC"> engineer </tspan>
+          <tspan fill="#FF7B72">=</tspan>
+          <tspan fill="#F0F6FC"> {</tspan>
+        </text>
+        <!-- Line 2 -->
+        <text x="32" y="36">
+          <tspan fill="#79C0FF">  name</tspan>
+          <tspan fill="#F0F6FC">: </tspan>
+          <tspan fill="#A5D6FF">"Mujtaba Abdul Mannan"</tspan>
+          <tspan fill="#F0F6FC">,</tspan>
+        </text>
+        <!-- Line 3 -->
+        <text x="32" y="56">
+          <tspan fill="#79C0FF">  role</tspan>
+          <tspan fill="#F0F6FC">: </tspan>
+          <tspan fill="#A5D6FF">"Frontend Web Developer"</tspan>
+          <tspan fill="#F0F6FC">,</tspan>
+        </text>
+        <!-- Line 4 -->
+        <text x="32" y="76">
+          <tspan fill="#79C0FF">  focus</tspan>
+          <tspan fill="#F0F6FC">: </tspan>
+          <tspan fill="#A5D6FF">"Modern UI"</tspan>
+          <tspan fill="#F0F6FC">,</tspan>
+        </text>
+        <!-- Line 5 -->
+        <text x="32" y="96">
+          <tspan fill="#79C0FF">  learning</tspan>
+          <tspan fill="#F0F6FC">: </tspan>
+          <tspan fill="#A5D6FF">"JavaScript"</tspan>
+          <tspan fill="#F0F6FC">,</tspan>
+        </text>
+        <!-- Line 6 -->
+        <text x="32" y="116">
+          <tspan fill="#79C0FF">  location</tspan>
+          <tspan fill="#F0F6FC">: </tspan>
+          <tspan fill="#A5D6FF">"Hyderabad"</tspan>
+        </text>
+        <!-- Line 7 -->
+        <text x="32" y="136">
+          <tspan fill="#F0F6FC">};</tspan>
+        </text>
+        <!-- Line 8 (Empty) -->
+        <!-- Line 9 -->
+        <text x="32" y="176">
+          <tspan fill="#8B949E">  // Building the future, one line at a time</tspan>
+        </text>
+        <!-- Line 10 -->
+        <text x="32" y="196">
+          <tspan fill="#79C0FF">console</tspan>
+          <tspan fill="#F0F6FC">.</tspan>
+          <tspan fill="#D2A8FF">log</tspan>
+          <tspan fill="#F0F6FC">(engineer);</tspan>
+        </text>
+      </g>
+
+      <!-- Animated Code Highlight -->
+      <rect x="28" y="24" width="460" height="16" rx="3" fill="#58A6FF" opacity="0.08">
+        <animate attributeName="y" values="24;44;64;84;104;124;24" dur="12s" repeatCount="indefinite"/>
+      </rect>
+
+      <!-- Blinking Cursor -->
+      <rect x="150" y="204" width="8" height="14" rx="1" fill="#58A6FF">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Editor Status Bar -->
+    <rect x="0" y="290" width="520" height="30" rx="0" fill="#0D1117"/>
+    <rect x="0" y="308" width="520" height="12" rx="12" fill="#0D1117"/>
+    <line x1="0" y1="290" x2="520" y2="290" stroke="#30363D" stroke-width="1"/>
+    
+    <circle cx="16" cy="305" r="3" fill="#3FB950">
+      <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+    </circle>
+    <text x="26" y="309" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">JavaScript</text>
+    <text x="110" y="309" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">UTF-8</text>
+    <text x="180" y="309" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">LF</text>
+    <text x="420" y="309" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">Ln 10, Col 1</text>
+
+    <!-- Editor Glow -->
+    <rect width="520" height="320" rx="12" fill="none" stroke="#58A6FF" stroke-width="0.5" opacity="0.15" filter="url(#glowSoft)">
+      <animate attributeName="opacity" values="0.15;0.25;0.15" dur="6s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- Project Card 1: LUMAAN Perfumes -->
+  <g transform="translate(680, 420)" filter="url(#cardShadow)">
+    <animateTransform attributeName="transform" type="translate" values="680,420;680,415;680,420" dur="7s" repeatCount="indefinite"/>
+    
+    <rect width="240" height="140" rx="10" fill="url(#cardGlass)" stroke="#30363D" stroke-width="1"/>
+    <rect width="240" height="140" rx="10" fill="none" stroke="url(#borderAnim)" stroke-width="1" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+    
+    <!-- Tiny Browser Mockup -->
+    <g transform="translate(12, 12)" clip-path="url(#cardClip1)">
+      <rect width="216" height="60" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.5"/>
+      <rect x="0" y="0" width="216" height="14" rx="6" fill="#161B22"/>
+      <rect x="0" y="10" width="216" height="4" fill="#161B22"/>
+      <circle cx="8" cy="7" r="2" fill="#FF5F57"/>
+      <circle cx="16" cy="7" r="2" fill="#FFBD2E"/>
+      <circle cx="24" cy="7" r="2" fill="#28C840"/>
+      
+      <text x="108" y="38" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" font-weight="600" fill="#F0F6FC" text-anchor="middle">LUMAAN</text>
+      <text x="108" y="52" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="7" font-weight="400" fill="#8B949E" text-anchor="middle">LUXURY FRAGRANCES</text>
+    </g>
+
+    <!-- Card Text -->
+    <text x="12" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">LUMAAN Perfumes</text>
+    <text x="12" y="106" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" font-weight="400" fill="#8B949E">Luxury E-Commerce</text>
+    
+    <!-- Tech Chips -->
+    <g transform="translate(12, 116)">
+      <rect width="36" height="14" rx="3" fill="#21262D" stroke="#30363D" stroke-width="0.5"/>
+      <text x="18" y="10" font-family="'JetBrains Mono',monospace" font-size="7" fill="#F0F6FC" text-anchor="middle">HTML</text>
+      
+      <rect x="42" width="32" height="14" rx="3" fill="#21262D" stroke="#30363D" stroke-width="0.5"/>
+      <text x="58" y="10" font-family="'JetBrains Mono',monospace" font-size="7" fill="#F0F6FC" text-anchor="middle">CSS</text>
+      
+      <rect x="80" width="42" height="14" rx="3" fill="#21262D" stroke="#30363D" stroke-width="0.5"/>
+      <text x="101" y="10" font-family="'JetBrains Mono',monospace" font-size="7" fill="#F0F6FC" text-anchor="middle">JS</text>
+    </g>
+
+    <!-- Corner Accent -->
+    <circle cx="224" cy="16" r="3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Project Card 2: Pearl Beauty Parlour -->
+  <g transform="translate(940, 420)" filter="url(#cardShadow)">
+    <animateTransform attributeName="transform" type="translate" values="940,420;940,417;940,420" dur="8s" repeatCount="indefinite"/>
+    
+    <rect width="240" height="140" rx="10" fill="url(#cardGlass)" stroke="#30363D" stroke-width="1"/>
+    <rect width="240" height="140" rx="10" fill="none" stroke="url(#borderAnim)" stroke-width="1" opacity="0.4">
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="6s" repeatCount="indefinite" begin="2s"/>
+    </rect>
+    
+    <!-- Tiny Browser Mockup -->
+    <g transform="translate(12, 12)" clip-path="url(#cardClip2)">
+      <rect width="216" height="60" rx="6" fill="#0D1117" stroke="#30363D" stroke-width="0.5"/>
+      <rect x="0" y="0" width="216" height="14" rx="6" fill="#161B22"/>
+      <rect x="0" y="10" width="216" height="4" fill="#161B22"/>
+      <circle cx="8" cy="7" r="2" fill="#FF5F57"/>
+      <circle cx="16" cy="7" r="2" fill="#FFBD2E"/>
+      <circle cx="24" cy="7" r="2" fill="#28C840"/>
+      
+      <text x="108" y="38" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" font-weight="600" fill="#F0F6FC" text-anchor="middle">PEARL</text>
+      <text x="108" y="52" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="7" font-weight="400" fill="#8B949E" text-anchor="middle">BEAUTY PARLOUR</text>
+    </g>
+
+    <!-- Card Text -->
+    <text x="12" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#F0F6FC">Pearl Beauty Parlour</text>
+    <text x="12" y="106" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" font-weight="400" fill="#8B949E">Business Website</text>
+    
+    <!-- Tech Chips -->
+    <g transform="translate(12, 116)">
+      <rect width="36" height="14" rx="3" fill="#21262D" stroke="#30363D" stroke-width="0.5"/>
+      <text x="18" y="10" font-family="'JetBrains Mono',monospace" font-size="7" fill="#F0F6FC" text-anchor="middle">HTML</text>
+      
+      <rect x="42" width="32" height="14" rx="3" fill="#21262D" stroke="#30363D" stroke-width="0.5"/>
+      <text x="58" y="10" font-family="'JetBrains Mono',monospace" font-size="7" fill="#F0F6FC" text-anchor="middle">CSS</text>
+      
+      <rect x="80" width="42" height="14" rx="3" fill="#21262D" stroke="#30363D" stroke-width="0.5"/>
+      <text x="101" y="10" font-family="'JetBrains Mono',monospace" font-size="7" fill="#F0F6FC" text-anchor="middle">JS</text>
+    </g>
+
+    <!-- Corner Accent -->
+    <circle cx="224" cy="16" r="3" fill="#79C0FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+
+  <!-- Floating Tech Chips (Bottom Right) -->
+  <g transform="translate(1050, 580)">
+    <animateTransform attributeName="transform" type="translate" values="1050,580;1050,575;1050,580" dur="6s" repeatCount="indefinite"/>
+    
+    <rect width="60" height="24" rx="6" fill="#21262D" stroke="#30363D" stroke-width="0.5" opacity="0.8">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <text x="30" y="16" font-family="'JetBrains Mono',monospace" font-size="9" font-weight="500" fill="#F0F6FC" text-anchor="middle">React</text>
+    
+    <rect x="70" width="60" height="24" rx="6" fill="#21262D" stroke="#30363D" stroke-width="0.5" opacity="0.8">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+    </rect>
+    <text x="100" y="16" font-family="'JetBrains Mono',monospace" font-size="9" font-weight="500" fill="#F0F6FC" text-anchor="middle">Node</text>
+    
+    <rect x="140" width="60" height="24" rx="6" fill="#21262D" stroke="#30363D" stroke-width="0.5" opacity="0.8">
+      <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+    <text x="170" y="16" font-family="'JetBrains Mono',monospace" font-size="9" font-weight="500" fill="#F0F6FC" text-anchor="middle">Git</text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- DECORATIONS & OVERLAYS                       -->
+  <!-- ============================================ -->
+  
+  <!-- Corner decorations -->
+  <g stroke="#30363D" stroke-width="1" opacity="0.25">
+    <line x1="20" y1="20" x2="20" y2="40"/>
+    <line x1="20" y1="20" x2="40" y2="20"/>
+    <line x1="1260" y1="20" x2="1260" y2="40"/>
+    <line x1="1260" y1="20" x2="1240" y2="20"/>
+    <line x1="20" y1="620" x2="20" y2="600"/>
+    <line x1="20" y1="620" x2="40" y2="620"/>
+    <line x1="1260" y1="620" x2="1260" y2="600"/>
+    <line x1="1260" y1="620" x2="1240" y2="620"/>
+  </g>
+
+  <!-- Version indicator -->
+  <text x="1240" y="624" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" fill="#484F58" text-anchor="end">v2.0.0</text>
+
+  <!-- Animated wave at bottom -->
+  <path d="M0 630 Q160 625 320 630 Q480 635 640 630 Q800 625 960 630 Q1120 635 1280 630" fill="none" stroke="#58A6FF" stroke-width="0.5" opacity="0.15">
+    <animate attributeName="d" values="M0 630 Q160 625 320 630 Q480 635 640 630 Q800 625 960 630 Q1120 635 1280 630;M0 630 Q160 635 320 630 Q480 625 640 630 Q800 635 960 630 Q1120 625 1280 630;M0 630 Q160 625 320 630 Q480 635 640 630 Q800 625 960 630 Q1120 635 1280 630" dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Additional floating particles -->
+  <g opacity="0.3">
+    <circle cx="640" cy="120" r="1" fill="#58A6FF">
+      <animate attributeName="cy" values="120;110;120" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="620" r="1.2" fill="#79C0FF">
+      <animate attributeName="cy" values="620;630;620" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="40" cy="400" r="0.8" fill="#58A6FF">
+      <animate attributeName="cy" values="400;390;400" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1240" cy="350" r="1" fill="#79C0FF">
+      <animate attributeName="cy" values="350;360;350" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Subtle vignette effect -->
+  <rect width="1280" height="640" fill="url(#vignette)" pointer-events="none"/>
+
+</svg>
