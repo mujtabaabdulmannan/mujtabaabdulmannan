@@ -1,70 +1,646 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="280" viewBox="0 0 1600 280">
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  ╔══════════════════════════════════════════════════════════════════════╗
+  ║  PREMIUM ANIMATED FOOTER — GitHub Profile README                    ║
+  ║  Designer & Developer: Mujtaba Abdul Mannan                         ║
+  ║  Frontend Web Developer | IT Engineering Student                    ║
+  ║  Hyderabad, India                                                   ║
+  ╚══════════════════════════════════════════════════════════════════════╝
+-->
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 1600 280"
+  width="100%"
+  height="100%"
+  preserveAspectRatio="xMidYMid slice"
+  role="img"
+  aria-label="Premium animated footer">
+
+  <!-- ================================================================ -->
+  <!-- =========================  DEFS  =============================== -->
+  <!-- ================================================================ -->
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0D1117"/>
+
+    <!-- ——— Base Background Gradient ——— -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%"  stop-color="#0D1117"/>
       <stop offset="50%" stop-color="#0F141B"/>
       <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
-    <linearGradient id="textGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#F0F6FC"/>
+
+    <!-- ——— Animated Mesh Gradient (Primary) ——— -->
+    <radialGradient id="meshGlow1" cx="20%" cy="40%" r="45%">
+      <stop offset="0%"  stop-color="#58A6FF" stop-opacity="0.22">
+        <animate attributeName="stop-opacity" values="0.22;0.35;0.22" dur="9s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" stop-color="#58A6FF" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="meshGlow2" cx="80%" cy="60%" r="45%">
+      <stop offset="0%"  stop-color="#79C0FF" stop-opacity="0.18">
+        <animate attributeName="stop-opacity" values="0.18;0.30;0.18" dur="11s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="60%" stop-color="#79C0FF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="meshGlow3" cx="50%" cy="10%" r="40%">
+      <stop offset="0%"  stop-color="#3FB950" stop-opacity="0.08">
+        <animate attributeName="stop-opacity" values="0.08;0.15;0.08" dur="13s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- ——— Moving Gradient Streak ——— -->
+    <linearGradient id="streakGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ——— Wave Gradients ——— -->
+    <linearGradient id="waveGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#58A6FF" stop-opacity="0.18"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.28"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0.18"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#161B22" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#21262D" stop-opacity="0.85"/>
+      <stop offset="100%" stop-color="#161B22" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="waveGrad3" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#0D1117" stop-opacity="0.9"/>
+      <stop offset="50%" stop-color="#161B22" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- ——— Text Gradient ——— -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%"  stop-color="#F0F6FC"/>
       <stop offset="50%" stop-color="#79C0FF"/>
       <stop offset="100%" stop-color="#F0F6FC"/>
     </linearGradient>
-    <linearGradient id="wave1" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.15"/>
-      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.25"/>
-      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0.15"/>
+
+    <!-- ——— Icon Accent Gradient ——— -->
+    <linearGradient id="iconAccent" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#79C0FF"/>
+      <stop offset="100%" stop-color="#58A6FF"/>
     </linearGradient>
-    <linearGradient id="wave2" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#161B22" stop-opacity="0.6"/>
-      <stop offset="50%" stop-color="#21262D" stop-opacity="0.8"/>
-      <stop offset="100%" stop-color="#161B22" stop-opacity="0.6"/>
+
+    <!-- ——— Glass Reflection Gradient ——— -->
+    <linearGradient id="glassReflection" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#F0F6FC" stop-opacity="0.06"/>
+      <stop offset="50%" stop-color="#F0F6FC" stop-opacity="0.01"/>
+      <stop offset="100%" stop-color="#F0F6FC" stop-opacity="0"/>
     </linearGradient>
+
+    <!-- ——— Technical Grid Pattern ——— -->
+    <pattern id="gridPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#30363D" stroke-width="0.4" stroke-opacity="0.35"/>
+    </pattern>
+
+    <pattern id="blueprintGrid" x="0" y="0" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M 80 0 L 0 0 0 80" fill="none" stroke="#58A6FF" stroke-width="0.3" stroke-opacity="0.12"/>
+    </pattern>
+
+    <!-- ——— Noise Texture (Subtle) ——— -->
+    <filter id="noiseFilter" x="0%" y="0%" width="100%" height="100%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch" seed="3"/>
+      <feColorMatrix values="0 0 0 0 0.94
+                             0 0 0 0 0.96
+                             0 0 0 0 0.99
+                             0 0 0 0.04 0"/>
+    </filter>
+
+    <!-- ——— Soft Glow Filter ——— -->
+    <filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ——— Heavy Blur ——— -->
+    <filter id="heavyBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="40"/>
+    </filter>
+
+    <!-- ——— Medium Blur ——— -->
+    <filter id="medBlur" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+
+    <!-- ——— Icon Glow ——— -->
+    <filter id="iconGlow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- ——— Scan Line Gradient ——— -->
+    <linearGradient id="scanGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ——— Mask for Top Fade ——— -->
+    <linearGradient id="topFadeMask" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%"  stop-color="#000" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- ——— Symbol: GitHub Icon (outline) ——— -->
+    <symbol id="iconGithub" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+    </symbol>
+
+    <!-- ——— Symbol: LinkedIn Icon (outline) ——— -->
+    <symbol id="iconLinkedin" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+        d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2zM4 6a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+    </symbol>
+
+    <!-- ——— Symbol: Email Icon (outline) ——— -->
+    <symbol id="iconEmail" viewBox="0 0 24 24">
+      <path fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+      <polyline fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"
+        points="22,6 12,13 2,6"/>
+    </symbol>
+
+    <!-- ——— Symbol: Portfolio/Globe Icon (outline) ——— -->
+    <symbol id="iconPortfolio" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.4"/>
+      <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="1.4"/>
+      <path fill="none" stroke="currentColor" stroke-width="1.4"
+        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+    </symbol>
+
   </defs>
-  
-  <rect width="1600" height="280" fill="url(#bg)"/>
-  
-  <rect width="1600" height="280" fill="url(#wave1)"/>
-  
-  <path d="M0,240 Q400,220 800,240 T1600,240 L1600,280 L0,280 Z" fill="url(#wave2)"/>
-  <path d="M0,250 Q400,235 800,250 T1600,250 L1600,280 L0,280 Z" fill="#0D1117" opacity="0.9"/>
-  
-  <text x="800" y="50" font-family="Arial, sans-serif" font-size="26" font-weight="600" fill="url(#textGrad)" text-anchor="middle">Thank you for visiting.</text>
-  
-  <text x="800" y="75" font-family="Arial, sans-serif" font-size="12" fill="#8B949E" text-anchor="middle">Thanks for taking the time to explore my work.</text>
-  
-  <text x="800" y="95" font-family="Arial, sans-serif" font-size="11" fill="#79C0FF" text-anchor="middle" opacity="0.9">Let's build meaningful digital experiences together.</text>
-  
-  <line x1="720" y1="110" x2="880" y2="110" stroke="#30363D" stroke-width="1"/>
-  <circle cx="800" cy="110" r="3" fill="#58A6FF"/>
-  
-  <g fill="#161B22" stroke="#30363D" stroke-width="1">
-    <circle cx="695" cy="145" r="18"/>
-    <circle cx="765" cy="145" r="18"/>
-    <circle cx="835" cy="145" r="18"/>
-    <circle cx="905" cy="145" r="18"/>
+
+  <!-- ================================================================ -->
+  <!-- ===================  LAYER 1: BACKGROUND  ==================== -->
+  <!-- ================================================================ -->
+  <rect width="1600" height="280" fill="url(#bgGradient)"/>
+
+  <!-- Animated Mesh Glow Orbs -->
+  <g filter="url(#heavyBlur)" opacity="0.9">
+    <circle cx="280" cy="100" r="220" fill="url(#meshGlow1)">
+      <animate attributeName="cx" values="280;380;280" dur="18s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="100;140;100" dur="22s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1320" cy="160" r="240" fill="url(#meshGlow2)">
+      <animate attributeName="cx" values="1320;1220;1320" dur="20s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="160;120;160" dur="24s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="40" r="200" fill="url(#meshGlow3)">
+      <animate attributeName="cy" values="40;80;40" dur="26s" repeatCount="indefinite"/>
+    </circle>
   </g>
-  
-  <g fill="#F0F6FC">
-    <path d="M695,138 Q688,138 688,142 L688,147 Q688,152 695,152 L700,152 Q700,152 700,149 L697,149 Q697,149 697,147 L700,147 Q700,147 700,145 L695,145 Q695,145 695,142 L698,142 Q698,142 698,144 L700,144 Q700,144 700,142 L695,142 Q695,142 695,138 Z" opacity="0.9"/>
-    <text x="765" y="149" font-family="Arial" font-size="10" fill="#F0F6FC" text-anchor="middle">in</text>
-    <text x="835" y="149" font-family="Arial" font-size="10" fill="#F0F6FC" text-anchor="middle">@</text>
-    <text x="905" y="149" font-family="Arial" font-size="10" fill="#F0F6FC" text-anchor="middle">W</text>
+
+  <!-- Technical Grid -->
+  <rect width="1600" height="280" fill="url(#gridPattern)" opacity="0.55"/>
+  <rect width="1600" height="280" fill="url(#blueprintGrid)" opacity="0.7"/>
+
+  <!-- Grid Breathing Animation -->
+  <rect width="1600" height="280" fill="url(#gridPattern)" opacity="0.15">
+    <animate attributeName="opacity" values="0.15;0.35;0.15" dur="8s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Noise Texture Overlay -->
+  <rect width="1600" height="280" filter="url(#noiseFilter)" opacity="0.35"/>
+
+  <!-- Glass Reflection -->
+  <rect width="1600" height="140" fill="url(#glassReflection)" opacity="0.8"/>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 2: GRADIENT STREAKS  ===================== -->
+  <!-- ================================================================ -->
+  <g opacity="0.5">
+    <rect x="-400" y="60" width="400" height="1" fill="url(#streakGradient)">
+      <animate attributeName="x" values="-400;1600" dur="14s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-300" y="180" width="300" height="1" fill="url(#streakGradient)" opacity="0.7">
+      <animate attributeName="x" values="-300;1600" dur="18s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-500" y="110" width="500" height="0.6" fill="url(#streakGradient)" opacity="0.5">
+      <animate attributeName="x" values="-500;1600" dur="22s" begin="6s" repeatCount="indefinite"/>
+    </rect>
   </g>
-  
-  <g font-family="Arial, sans-serif" font-size="7" fill="#8B949E" text-anchor="middle">
-    <text x="695" y="165">GITHUB</text>
-    <text x="765" y="165">LINKEDIN</text>
-    <text x="835" y="165">EMAIL</text>
-    <text x="905" y="165">PORTFOLIO</text>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 3: CONSTELLATION  ========================= -->
+  <!-- ================================================================ -->
+  <g opacity="0.55">
+    <!-- Constellation nodes -->
+    <g fill="#58A6FF">
+      <circle cx="120" cy="50" r="1.4">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="200" cy="80" r="1.1">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="5s" begin="0.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="170" cy="130" r="1.3">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4.5s" begin="1s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="260" cy="40" r="1">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="5.5s" begin="1.5s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="320" cy="100" r="1.2">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4.2s" begin="2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1400" cy="60" r="1.4">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1480" cy="110" r="1.1">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="5.2s" begin="0.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1420" cy="150" r="1.3">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4.6s" begin="1.3s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1360" cy="90" r="1">
+        <animate attributeName="opacity" values="0.4;1;0.4" dur="5.4s" begin="1.8s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="1520" cy="50" r="1.2">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="4.4s" begin="2.3s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+
+    <!-- Constellation connecting lines -->
+    <g stroke="#58A6FF" stroke-width="0.5" fill="none" opacity="0.35">
+      <line x1="120" y1="50" x2="200" y2="80">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" repeatCount="indefinite"/>
+      </line>
+      <line x1="200" y1="80" x2="170" y2="130">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="120" y1="50" x2="260" y2="40">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" begin="1s" repeatCount="indefinite"/>
+      </line>
+      <line x1="260" y1="40" x2="320" y2="100">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="1400" y1="60" x2="1480" y2="110">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" repeatCount="indefinite"/>
+      </line>
+      <line x1="1480" y1="110" x2="1420" y2="150">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" begin="0.5s" repeatCount="indefinite"/>
+      </line>
+      <line x1="1400" y1="60" x2="1360" y2="90">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" begin="1s" repeatCount="indefinite"/>
+      </line>
+      <line x1="1360" y1="90" x2="1520" y2="50">
+        <animate attributeName="opacity" values="0.1;0.5;0.1" dur="6s" begin="1.5s" repeatCount="indefinite"/>
+      </line>
+    </g>
   </g>
-  
-  <text x="800" y="200" font-family="Arial, sans-serif" font-size="10" fill="#8B949E" text-anchor="middle" font-style="italic">"Great software is built through curiosity, continuous learning,</text>
-  <text x="800" y="215" font-family="Arial, sans-serif" font-size="10" fill="#8B949E" text-anchor="middle" font-style="italic">and thoughtful engineering."</text>
-  
-  <text x="800" y="235" font-family="Arial, sans-serif" font-size="6.5" fill="#8B949E" text-anchor="middle" letter-spacing="1.5">FRONTEND WEB DEVELOPER  •  IT ENGINEERING STUDENT  •  HYDERABAD, INDIA</text>
-  
-  <text x="800" y="260" font-family="Arial, sans-serif" font-size="7" fill="#F0F6FC" text-anchor="middle" letter-spacing="1.8">DESIGNED &amp; DEVELOPED BY <tspan fill="#58A6FF" font-weight="bold">MUJTABA ABDUL MANNAN</tspan></text>
-  
-  <circle cx="800" cy="248" r="2" fill="#58A6FF"/>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 4: FLOATING PARTICLES  ==================== -->
+  <!-- ================================================================ -->
+  <g opacity="0.7">
+    <circle cx="80" cy="140" r="1" fill="#79C0FF">
+      <animate attributeName="cy" values="140;120;140" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="220" cy="200" r="1.2" fill="#58A6FF">
+      <animate attributeName="cy" values="200;175;200" dur="9s" begin="1s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="9s" begin="1s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="380" cy="160" r="0.9" fill="#F0F6FC">
+      <animate attributeName="cy" values="160;140;160" dur="8s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="8s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="520" cy="100" r="1.1" fill="#79C0FF">
+      <animate attributeName="cy" values="100;80;100" dur="10s" begin="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="10s" begin="0.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="680" cy="220" r="1" fill="#58A6FF">
+      <animate attributeName="cy" values="220;195;220" dur="8.5s" begin="1.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="8.5s" begin="1.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="900" cy="120" r="1.3" fill="#F0F6FC">
+      <animate attributeName="cy" values="120;95;120" dur="9.5s" begin="2.5s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="9.5s" begin="2.5s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1080" cy="180" r="1" fill="#79C0FF">
+      <animate attributeName="cy" values="180;155;180" dur="8s" begin="0.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.9;0.2" dur="8s" begin="0.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1240" cy="140" r="1.2" fill="#58A6FF">
+      <animate attributeName="cy" values="140;115;140" dur="9s" begin="1.8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="9s" begin="1.8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1460" cy="200" r="0.9" fill="#F0F6FC">
+      <animate attributeName="cy" values="200;175;200" dur="7.5s" begin="2.2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.7;0.2" dur="7.5s" begin="2.2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1560" cy="80" r="1.1" fill="#79C0FF">
+      <animate attributeName="cy" values="80;60;80" dur="10s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.8;0.2" dur="10s" begin="0.3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 5: GLOWING CIRCLES  ======================= -->
+  <!-- ================================================================ -->
+  <g opacity="0.6">
+    <circle cx="180" cy="220" r="40" fill="none" stroke="#58A6FF" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="r" values="40;55;40" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.05;0.3" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1420" cy="60" r="50" fill="none" stroke="#79C0FF" stroke-width="0.5" opacity="0.3">
+      <animate attributeName="r" values="50;70;50" dur="12s" begin="2s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.05;0.3" dur="12s" begin="2s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="800" cy="240" r="60" fill="none" stroke="#58A6FF" stroke-width="0.4" opacity="0.25">
+      <animate attributeName="r" values="60;85;60" dur="14s" begin="4s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.25;0.03;0.25" dur="14s" begin="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 6: CODE BRACKETS  ========================= -->
+  <!-- ================================================================ -->
+  <g font-family="JetBrains Mono, SF Mono, Menlo, monospace" fill="#58A6FF" opacity="0.18">
+    <text x="60" y="30" font-size="14">&lt;/&gt;</text>
+    <text x="1520" y="30" font-size="14">{ }</text>
+    <text x="100" y="260" font-size="12">[ ]</text>
+    <text x="1480" y="260" font-size="12">( )</text>
+    <text x="40" y="150" font-size="11" opacity="0.6">/*</text>
+    <text x="1550" y="150" font-size="11" opacity="0.6">*/</text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 7: SCAN LINE  ============================= -->
+  <!-- ================================================================ -->
+  <g opacity="0.4">
+    <rect x="0" y="-40" width="1600" height="30" fill="url(#scanGradient)">
+      <animate attributeName="y" values="-40;280" dur="12s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 8: MAIN TYPOGRAPHY  ======================= -->
+  <!-- ================================================================ -->
+
+  <!-- Heading -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+    <text x="800" y="58" font-size="28" font-weight="600" fill="url(#textGradient)" letter-spacing="0.5">
+      Thank you for visiting.
+      <animate attributeName="opacity" values="0.85;1;0.85" dur="5s" repeatCount="indefinite"/>
+    </text>
+  </g>
+
+  <!-- Subtitle -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+    <text x="800" y="86" font-size="13" font-weight="400" fill="#8B949E" letter-spacing="0.8">
+      Thanks for taking the time to explore my work.
+    </text>
+  </g>
+
+  <!-- Third Line -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+    <text x="800" y="108" font-size="12" font-weight="400" fill="#79C0FF" letter-spacing="1" opacity="0.85">
+      Let's build meaningful digital experiences together.
+    </text>
+  </g>
+
+  <!-- Decorative divider under heading -->
+  <g opacity="0.7">
+    <line x1="740" y1="122" x2="860" y2="122" stroke="#30363D" stroke-width="1"/>
+    <circle cx="800" cy="122" r="2" fill="#58A6FF">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <line x1="795" y1="122" x2="805" y2="122" stroke="#79C0FF" stroke-width="1.5"/>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 9: SOCIAL ICONS  ========================== -->
+  <!-- ================================================================ -->
+  <g transform="translate(800, 158)" font-family="Inter, 'Segoe UI', system-ui, sans-serif">
+
+    <!-- Icon container group (centered around 0,0) -->
+    <g>
+      <!-- GitHub -->
+      <g transform="translate(-105, 0)" color="#F0F6FC">
+        <circle cx="0" cy="0" r="18" fill="#161B22" stroke="#30363D" stroke-width="1" opacity="0.9">
+          <animate attributeName="stroke" values="#30363D;#58A6FF;#30363D" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#58A6FF" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="18;26;18" dur="4s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.4;0" dur="4s" repeatCount="indefinite"/>
+        </circle>
+        <use href="#iconGithub" x="-9" y="-9" width="18" height="18"/>
+      </g>
+
+      <!-- LinkedIn -->
+      <g transform="translate(-35, 0)" color="#F0F6FC">
+        <circle cx="0" cy="0" r="18" fill="#161B22" stroke="#30363D" stroke-width="1" opacity="0.9">
+          <animate attributeName="stroke" values="#30363D;#58A6FF;#30363D" dur="4s" begin="1s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#58A6FF" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="18;26;18" dur="4s" begin="1s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.4;0" dur="4s" begin="1s" repeatCount="indefinite"/>
+        </circle>
+        <use href="#iconLinkedin" x="-9" y="-9" width="18" height="18"/>
+      </g>
+
+      <!-- Email -->
+      <g transform="translate(35, 0)" color="#F0F6FC">
+        <circle cx="0" cy="0" r="18" fill="#161B22" stroke="#30363D" stroke-width="1" opacity="0.9">
+          <animate attributeName="stroke" values="#30363D;#58A6FF;#30363D" dur="4s" begin="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#58A6FF" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="18;26;18" dur="4s" begin="2s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.4;0" dur="4s" begin="2s" repeatCount="indefinite"/>
+        </circle>
+        <use href="#iconEmail" x="-9" y="-9" width="18" height="18"/>
+      </g>
+
+      <!-- Portfolio -->
+      <g transform="translate(105, 0)" color="#F0F6FC">
+        <circle cx="0" cy="0" r="18" fill="#161B22" stroke="#30363D" stroke-width="1" opacity="0.9">
+          <animate attributeName="stroke" values="#30363D;#58A6FF;#30363D" dur="4s" begin="3s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="0" cy="0" r="18" fill="none" stroke="#58A6FF" stroke-width="1" opacity="0">
+          <animate attributeName="r" values="18;26;18" dur="4s" begin="3s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0;0.4;0" dur="4s" begin="3s" repeatCount="indefinite"/>
+        </circle>
+        <use href="#iconPortfolio" x="-9" y="-9" width="18" height="18"/>
+      </g>
+    </g>
+
+    <!-- Labels under icons -->
+    <g font-size="8" fill="#8B949E" text-anchor="middle" letter-spacing="1.2">
+      <text x="-105" y="32">GITHUB</text>
+      <text x="-35" y="32">LINKEDIN</text>
+      <text x="35" y="32">EMAIL</text>
+      <text x="105" y="32">PORTFOLIO</text>
+    </g>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 10: QUOTE  ================================ -->
+  <!-- ================================================================ -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+    <!-- Quote marks -->
+    <text x="560" y="215" font-size="28" font-weight="300" fill="#58A6FF" opacity="0.5" font-style="italic">“</text>
+    <text x="1040" y="235" font-size="28" font-weight="300" fill="#58A6FF" opacity="0.5" font-style="italic">”</text>
+
+    <!-- Quote text -->
+    <text x="800" y="215" font-size="11" font-weight="400" fill="#8B949E" font-style="italic" letter-spacing="0.3">
+      <tspan x="800" dy="0">Great software is built through curiosity,</tspan>
+      <tspan x="800" dy="13">continuous learning, and thoughtful engineering.</tspan>
+    </text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 11: BOTTOM WAVE (Layered)  ================ -->
+  <!-- ================================================================ -->
+
+  <!-- Wave Layer 1 (back, softest) -->
+  <g opacity="0.55">
+    <path fill="url(#waveGrad1)" opacity="0.4">
+      <animate attributeName="d"
+        dur="14s"
+        repeatCount="indefinite"
+        values="
+          M0,240 C200,220 400,260 600,240 C800,220 1000,260 1200,240 C1400,220 1600,250 1600,250 L1600,280 L0,280 Z;
+          M0,245 C200,260 400,225 600,245 C800,265 1000,225 1200,245 C1400,265 1600,240 1600,240 L1600,280 L0,280 Z;
+          M0,240 C200,220 400,260 600,240 C800,220 1000,260 1200,240 C1400,220 1600,250 1600,250 L1600,280 L0,280 Z"/>
+    </path>
+  </g>
+
+  <!-- Wave Layer 2 (middle) -->
+  <g opacity="0.7">
+    <path fill="url(#waveGrad2)">
+      <animate attributeName="d"
+        dur="10s"
+        repeatCount="indefinite"
+        values="
+          M0,255 C200,240 400,265 600,250 C800,235 1000,265 1200,250 C1400,235 1600,255 1600,255 L1600,280 L0,280 Z;
+          M0,250 C200,265 400,240 600,255 C800,270 1000,240 1200,255 C1400,270 1600,250 1600,250 L1600,280 L0,280 Z;
+          M0,255 C200,240 400,265 600,250 C800,235 1000,265 1200,250 C1400,235 1600,255 1600,255 L1600,280 L0,280 Z"/>
+    </path>
+  </g>
+
+  <!-- Wave Layer 3 (front, darkest) -->
+  <g opacity="0.95">
+    <path fill="url(#waveGrad3)">
+      <animate attributeName="d"
+        dur="8s"
+        repeatCount="indefinite"
+        values="
+          M0,265 C200,255 400,275 600,265 C800,255 1000,275 1200,265 C1400,255 1600,268 1600,268 L1600,280 L0,280 Z;
+          M0,268 C200,278 400,258 600,268 C800,278 1000,258 1200,268 C1400,278 1600,265 1600,265 L1600,280 L0,280 Z;
+          M0,265 C200,255 400,275 600,265 C800,255 1000,275 1200,265 C1400,255 1600,268 1600,268 L1600,280 L0,280 Z"/>
+    </path>
+  </g>
+
+  <!-- Subtle wave highlight line -->
+  <path fill="none" stroke="#58A6FF" stroke-width="0.6" opacity="0.35">
+    <animate attributeName="d"
+      dur="10s"
+      repeatCount="indefinite"
+      values="
+        M0,255 C200,240 400,265 600,250 C800,235 1000,265 1200,250 C1400,235 1600,255 1600,255;
+        M0,250 C200,265 400,240 600,255 C800,270 1000,240 1200,255 C1400,270 1600,250 1600,250;
+        M0,255 C200,240 400,265 600,250 C800,235 1000,265 1200,250 C1400,235 1600,255 1600,255"/>
+    <animate attributeName="opacity" values="0.2;0.5;0.2" dur="6s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 12: BOTTOM FOOTER TEXT  =================== -->
+  <!-- ================================================================ -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Display', 'Segoe UI', system-ui, sans-serif">
+
+    <!-- Main credit line -->
+    <text x="800" y="273" font-size="7.5" font-weight="500" fill="#F0F6FC" letter-spacing="2.2" opacity="0.9">
+      DESIGNED &amp; DEVELOPED BY
+      <tspan fill="#58A6FF" font-weight="600">  MUJTABA ABDUL MANNAN</tspan>
+    </text>
+
+    <!-- Sub-info line -->
+    <text x="800" y="280" font-size="0" fill="#8B949E" letter-spacing="1.5">
+      <!-- Hidden spacer to maintain baseline alignment -->
+    </text>
+
+  </g>
+
+  <!-- Additional footer info row (positioned just above wave) -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif" opacity="0.75">
+    <text x="800" y="235" font-size="0" fill="#8B949E">
+      <!-- Reserved for future expansion -->
+    </text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 13: CURSOR BLINK  ========================= -->
+  <!-- ================================================================ -->
+  <g opacity="0.8">
+    <rect x="1010" y="48" width="2" height="14" fill="#58A6FF">
+      <animate attributeName="opacity" values="0;1;0" dur="1.2s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 14: CORNER ACCENTS  ======================= -->
+  <!-- ================================================================ -->
+  <g stroke="#58A6FF" stroke-width="0.8" fill="none" opacity="0.4">
+    <!-- Top-left corner -->
+    <path d="M 20 20 L 20 40 M 20 20 L 40 20">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" repeatCount="indefinite"/>
+    </path>
+    <!-- Top-right corner -->
+    <path d="M 1580 20 L 1580 40 M 1580 20 L 1560 20">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" begin="1s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom-left corner -->
+    <path d="M 20 260 L 20 240 M 20 260 L 40 260">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" begin="2s" repeatCount="indefinite"/>
+    </path>
+    <!-- Bottom-right corner -->
+    <path d="M 1580 260 L 1580 240 M 1580 260 L 1560 260">
+      <animate attributeName="opacity" values="0.2;0.6;0.2" dur="5s" begin="3s" repeatCount="indefinite"/>
+    </path>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 15: TOP BORDER GLOW  ====================== -->
+  <!-- ================================================================ -->
+  <g opacity="0.6">
+    <line x1="0" y1="0.5" x2="1600" y2="0.5" stroke="url(#streakGradient)" stroke-width="1">
+      <animate attributeName="opacity" values="0.3;0.7;0.3" dur="6s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 16: FINAL INFO LINE  ====================== -->
+  <!-- ================================================================ -->
+  <g text-anchor="middle" font-family="Inter, 'SF Pro Text', 'Segoe UI', system-ui, sans-serif">
+    <text x="800" y="248" font-size="7" font-weight="400" fill="#8B949E" letter-spacing="1.8" opacity="0.7">
+      FRONTEND WEB DEVELOPER  ·  IT ENGINEERING STUDENT  ·  HYDERABAD, INDIA
+    </text>
+  </g>
+
+  <!-- ================================================================ -->
+  <!-- ============  LAYER 17: SIGNATURE DOT  ======================== -->
+  <!-- ================================================================ -->
+  <g>
+    <circle cx="800" cy="258" r="1.2" fill="#58A6FF">
+      <animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+      <animate attributeName="r" values="1.2;1.8;1.2" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
 </svg>
