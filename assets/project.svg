@@ -1,1 +1,752 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" style="background:#0D1117;font-family:'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif">
+  
+  <!-- ============================================ -->
+  <!-- DEFINITIONS: Gradients, Filters, Patterns    -->
+  <!-- ============================================ -->
+  <defs>
+    <!-- Background mesh gradients -->
+    <radialGradient id="meshGlow1" cx="15%" cy="25%" r="55%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.08">
+        <animate attributeName="stop-opacity" values="0.08;0.14;0.08" dur="18s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meshGlow2" cx="85%" cy="75%" r="50%">
+      <stop offset="0%" stop-color="#79C0FF" stop-opacity="0.06">
+        <animate attributeName="stop-opacity" values="0.06;0.12;0.06" dur="22s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meshGlow3" cx="50%" cy="50%" r="45%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.04">
+        <animate attributeName="stop-opacity" values="0.04;0.08;0.04" dur="25s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="meshGlow4" cx="30%" cy="80%" r="40%">
+      <stop offset="0%" stop-color="#3FB950" stop-opacity="0.03">
+        <animate attributeName="stop-opacity" values="0.03;0.06;0.03" dur="20s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0"/>
+    </radialGradient>
 
+    <!-- Card glass gradient -->
+    <linearGradient id="cardGlass" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#21262D" stop-opacity="0.92"/>
+      <stop offset="50%" stop-color="#161B22" stop-opacity="0.88"/>
+      <stop offset="100%" stop-color="#21262D" stop-opacity="0.92"/>
+    </linearGradient>
+
+    <!-- Card border animated gradient -->
+    <linearGradient id="cardBorderAnim" x1="0%" y1="0%" x2="200%" y2="100%">
+      <stop offset="0%" stop-color="#30363D"/>
+      <stop offset="25%" stop-color="#58A6FF" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#30363D"/>
+      <stop offset="75%" stop-color="#79C0FF" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#30363D"/>
+      <animate attributeName="x1" values="0%;-200%" dur="12s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="200%;0%" dur="12s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <!-- Browser frame gradient -->
+    <linearGradient id="browserFrame" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+
+    <!-- Button gradient -->
+    <linearGradient id="btnPrimary" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58A6FF"/>
+      <stop offset="100%" stop-color="#79C0FF"/>
+    </linearGradient>
+
+    <!-- Button hover glow -->
+    <linearGradient id="btnGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#79C0FF" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- Tech chip gradient -->
+    <linearGradient id="chipGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#21262D"/>
+      <stop offset="100%" stop-color="#161B22"/>
+    </linearGradient>
+
+    <!-- Scan line gradient -->
+    <linearGradient id="scanLine" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#58A6FF" stop-opacity="0.04"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Light streak gradient -->
+    <linearGradient id="lightStreak" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#58A6FF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#79C0FF" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#58A6FF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Reflection gradient -->
+    <linearGradient id="reflection" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#F0F6FC" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#F0F6FC" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Vignette -->
+    <radialGradient id="vignette" cx="50%" cy="50%" r="75%">
+      <stop offset="0%" stop-color="#0D1117" stop-opacity="0"/>
+      <stop offset="100%" stop-color="#0D1117" stop-opacity="0.5"/>
+    </radialGradient>
+
+    <!-- Glow filters -->
+    <filter id="glowSoft" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="glowStrong" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <filter id="cardShadow" x="-15%" y="-15%" width="130%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+    <filter id="browserShadow" x="-10%" y="-10%" width="120%" height="130%">
+      <feDropShadow dx="0" dy="12" stdDeviation="24" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="btnShadow" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#58A6FF" flood-opacity="0.3"/>
+    </filter>
+
+    <!-- Blueprint grid pattern -->
+    <pattern id="blueprintGrid" width="50" height="50" patternUnits="userSpaceOnUse">
+      <path d="M 50 0 L 0 0 0 50" fill="none" stroke="#30363D" stroke-width="0.5" opacity="0.25"/>
+    </pattern>
+    <pattern id="fineGrid" width="10" height="10" patternUnits="userSpaceOnUse">
+      <path d="M 10 0 L 0 0 0 10" fill="none" stroke="#30363D" stroke-width="0.2" opacity="0.1"/>
+    </pattern>
+
+    <!-- Dot pattern -->
+    <pattern id="dotPattern" width="25" height="25" patternUnits="userSpaceOnUse">
+      <circle cx="12.5" cy="12.5" r="0.6" fill="#58A6FF" opacity="0.15"/>
+    </pattern>
+
+    <!-- Clip paths -->
+    <clipPath id="cardClip1">
+      <rect width="720" height="620" rx="20"/>
+    </clipPath>
+    <clipPath id="cardClip2">
+      <rect width="720" height="620" rx="20"/>
+    </clipPath>
+    <clipPath id="browserClip">
+      <rect width="640" height="380" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- ============================================ -->
+  <!-- BACKGROUND LAYER                             -->
+  <!-- ============================================ -->
+  
+  <!-- Base background -->
+  <rect width="1600" height="1000" fill="#0D1117"/>
+  
+  <!-- Blueprint grid -->
+  <rect width="1600" height="1000" fill="url(#blueprintGrid)" opacity="0.5">
+    <animate attributeName="opacity" values="0.5;0.3;0.5" dur="25s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Fine grid overlay -->
+  <rect width="1600" height="1000" fill="url(#fineGrid)" opacity="0.3"/>
+  
+  <!-- Dot pattern -->
+  <rect width="1600" height="1000" fill="url(#dotPattern)" opacity="0.4"/>
+
+  <!-- Mesh gradient overlays -->
+  <rect width="1600" height="1000" fill="url(#meshGlow1)"/>
+  <rect width="1600" height="1000" fill="url(#meshGlow2)"/>
+  <rect width="1600" height="1000" fill="url(#meshGlow3)"/>
+  <rect width="1600" height="1000" fill="url(#meshGlow4)"/>
+
+  <!-- Animated scan line -->
+  <rect x="0" y="-150" width="1600" height="300" fill="url(#scanLine)" opacity="0.6">
+    <animate attributeName="y" values="-150;1150;-150" dur="35s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Light streaks -->
+  <rect x="-400" y="200" width="800" height="2" fill="url(#lightStreak)" opacity="0.3" transform="rotate(15 400 200)">
+    <animate attributeName="x" values="-400;2000;-400" dur="40s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite"/>
+  </rect>
+  <rect x="-400" y="600" width="600" height="1.5" fill="url(#lightStreak)" opacity="0.2" transform="rotate(-10 200 600)">
+    <animate attributeName="x" values="-400;2000;-400" dur="45s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Technical lines -->
+  <line x1="0" y1="180" x2="1600" y2="180" stroke="#30363D" stroke-width="0.5" opacity="0.3">
+    <animate attributeName="opacity" values="0.3;0.15;0.3" dur="12s" repeatCount="indefinite"/>
+  </line>
+  <line x1="0" y1="820" x2="1600" y2="820" stroke="#30363D" stroke-width="0.5" opacity="0.25"/>
+  <line x1="400" y1="0" x2="400" y2="1000" stroke="#30363D" stroke-width="0.3" opacity="0.15"/>
+  <line x1="800" y1="0" x2="800" y2="1000" stroke="#30363D" stroke-width="0.3" opacity="0.15"/>
+  <line x1="1200" y1="0" x2="1200" y2="1000" stroke="#30363D" stroke-width="0.3" opacity="0.15"/>
+
+  <!-- Glowing blobs -->
+  <circle cx="250" cy="250" r="140" fill="#58A6FF" opacity="0.02" filter="url(#glowStrong)">
+    <animate attributeName="cx" values="250;280;250" dur="35s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="250;230;250" dur="30s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="1350" cy="700" r="160" fill="#79C0FF" opacity="0.02" filter="url(#glowStrong)">
+    <animate attributeName="cx" values="1350;1320;1350" dur="32s" repeatCount="indefinite"/>
+    <animate attributeName="cy" values="700;720;700" dur="28s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="800" cy="500" r="220" fill="#58A6FF" opacity="0.015" filter="url(#glowStrong)">
+    <animate attributeName="r" values="220;240;220" dur="25s" repeatCount="indefinite"/>
+  </circle>
+
+  <!-- Constellation particles -->
+  <g opacity="0.5">
+    <circle cx="120" cy="280" r="1.5" fill="#58A6FF" opacity="0.6">
+      <animate attributeName="cy" values="280;265;280" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.6;0.3;0.6" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="380" cy="160" r="1.2" fill="#79C0FF" opacity="0.5">
+      <animate attributeName="cx" values="380;400;380" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="650" cy="420" r="1.4" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="cy" values="420;405;420" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="920" cy="230" r="1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="920;940;920" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1180" cy="380" r="1.3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="cy" values="380;395;380" dur="13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1450" cy="200" r="1.1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="1450;1430;1450" dur="15s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="200" cy="650" r="1.2" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="cy" values="650;665;650" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="500" cy="780" r="1" fill="#79C0FF" opacity="0.3">
+      <animate attributeName="cx" values="500;520;500" dur="12s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="780" cy="850" r="1.3" fill="#58A6FF" opacity="0.4">
+      <animate attributeName="cy" values="850;835;850" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1050" cy="720" r="1.1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="1050;1070;1050" dur="13s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1320" cy="880" r="1.2" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="cy" values="880;895;880" dur="14s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1520" cy="550" r="1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="1520;1500;1520" dur="11s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="300" cy="500" r="0.9" fill="#58A6FF" opacity="0.3">
+      <animate attributeName="cy" values="500;515;500" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="700" cy="150" r="1.1" fill="#79C0FF" opacity="0.4">
+      <animate attributeName="cx" values="700;720;700" dur="10s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1100" cy="100" r="1.3" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="cy" values="100;115;100" dur="12s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Constellation connecting lines -->
+  <g stroke="#58A6FF" stroke-width="0.3" opacity="0.12">
+    <line x1="120" y1="280" x2="380" y2="160">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="10s" repeatCount="indefinite"/>
+    </line>
+    <line x1="380" y1="160" x2="650" y2="420">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="12s" repeatCount="indefinite"/>
+    </line>
+    <line x1="650" y1="420" x2="920" y2="230">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="11s" repeatCount="indefinite"/>
+    </line>
+    <line x1="920" y1="230" x2="1180" y2="380">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="13s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1180" y1="380" x2="1450" y2="200">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="14s" repeatCount="indefinite"/>
+    </line>
+    <line x1="200" y1="650" x2="500" y2="780">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="11s" repeatCount="indefinite"/>
+    </line>
+    <line x1="500" y1="780" x2="780" y2="850">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="10s" repeatCount="indefinite"/>
+    </line>
+    <line x1="780" y1="850" x2="1050" y2="720">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="12s" repeatCount="indefinite"/>
+    </line>
+    <line x1="1050" y1="720" x2="1320" y2="880">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="13s" repeatCount="indefinite"/>
+    </line>
+    <line x1="300" y1="500" x2="700" y2="150">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="15s" repeatCount="indefinite"/>
+    </line>
+    <line x1="700" y1="150" x2="1100" y2="100">
+      <animate attributeName="opacity" values="0.12;0.04;0.12" dur="14s" repeatCount="indefinite"/>
+    </line>
+  </g>
+
+  <!-- Floating circles -->
+  <g opacity="0.08">
+    <circle cx="80" cy="120" r="4" fill="none" stroke="#58A6FF" stroke-width="0.6">
+      <animate attributeName="cy" values="120;105;120" dur="18s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1520" cy="800" r="5" fill="none" stroke="#79C0FF" stroke-width="0.6">
+      <animate attributeName="cy" values="800;785;800" dur="20s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="850" r="3" fill="none" stroke="#58A6FF" stroke-width="0.5">
+      <animate attributeName="cy" values="850;865;850" dur="16s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1540" cy="150" r="4" fill="none" stroke="#79C0FF" stroke-width="0.5">
+      <animate attributeName="cy" values="150;165;150" dur="19s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- HEADER SECTION                               -->
+  <!-- ============================================ -->
+  <g transform="translate(80, 60)">
+    <!-- Header accent -->
+    <rect x="0" y="0" width="4" height="60" rx="2" fill="#58A6FF" opacity="0.9">
+      <animate attributeName="height" values="60;68;60" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    
+    <!-- Title -->
+    <text x="22" y="32" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="32" font-weight="700" fill="#F0F6FC" letter-spacing="-0.5">
+      Featured Engineering Projects
+    </text>
+    
+    <!-- Subtitle -->
+    <text x="22" y="62" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="400" fill="#8B949E" letter-spacing="0.2">
+      Projects focused on solving real-world problems through thoughtful design, responsive frontend development and continuous learning.
+    </text>
+
+    <!-- Status indicator -->
+    <circle cx="1380" cy="28" r="4" fill="#3FB950">
+      <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+    <text x="1394" y="32" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" fill="#8B949E">Active Development</text>
+  </g>
+
+  <!-- Header divider -->
+  <line x1="80" y1="140" x2="1520" y2="140" stroke="#30363D" stroke-width="1" opacity="0.4"/>
+
+  <!-- ============================================ -->
+  <!-- PROJECT CARD 1: LUMAAN Perfumes              -->
+  <!-- ============================================ -->
+  <g transform="translate(80, 170)" filter="url(#cardShadow)">
+    <!-- Floating animation -->
+    <animateTransform attributeName="transform" type="translate" values="80,170;80,165;80,170" dur="8s" repeatCount="indefinite"/>
+    
+    <!-- Card background -->
+    <rect width="720" height="620" rx="20" fill="url(#cardGlass)" stroke="#30363D" stroke-width="1"/>
+    
+    <!-- Animated border glow -->
+    <rect width="720" height="620" rx="20" fill="none" stroke="url(#cardBorderAnim)" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="6s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Glass reflection sweep -->
+    <rect width="720" height="620" rx="20" fill="url(#reflection)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- Card content -->
+    <g transform="translate(40, 40)">
+      <!-- Project header -->
+      <rect x="0" y="0" width="3" height="28" rx="1.5" fill="#58A6FF"/>
+      <text x="16" y="12" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#8B949E" letter-spacing="0.8">FEATURED PROJECT</text>
+      <text x="16" y="28" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="24" font-weight="700" fill="#F0F6FC" letter-spacing="-0.3">LUMAAN Perfumes</text>
+      <text x="16" y="48" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#79C0FF">Luxury Perfume E-Commerce Website</text>
+
+      <!-- Description -->
+      <text x="0" y="78" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="400" fill="#8B949E">
+        <tspan x="0" dy="0">A premium fragrance website inspired by Arabian and French luxury perfume brands.</tspan>
+        <tspan x="0" dy="20">Built with an emphasis on elegant branding, responsive layouts and immersive</tspan>
+        <tspan x="0" dy="20">shopping experiences.</tspan>
+      </text>
+
+      <!-- Browser mockup -->
+      <g transform="translate(0, 140)" filter="url(#browserShadow)">
+        <!-- Browser frame -->
+        <rect width="640" height="380" rx="10" fill="url(#browserFrame)" stroke="#30363D" stroke-width="1"/>
+        
+        <!-- Browser title bar -->
+        <rect x="0" y="0" width="640" height="36" rx="10" fill="#161B22"/>
+        <rect x="0" y="26" width="640" height="10" fill="#161B22"/>
+        <line x1="0" y1="36" x2="640" y2="36" stroke="#30363D" stroke-width="1"/>
+
+        <!-- Window controls -->
+        <circle cx="18" cy="18" r="5.5" fill="#FF5F57"/>
+        <circle cx="36" cy="18" r="5.5" fill="#FFBD2E"/>
+        <circle cx="54" cy="18" r="5.5" fill="#28C840"/>
+
+        <!-- Address bar -->
+        <rect x="80" y="10" width="480" height="18" rx="4" fill="#0D1117" stroke="#30363D" stroke-width="0.5"/>
+        <text x="96" y="23" font-family="'JetBrains Mono','SF Mono',monospace" font-size="9" fill="#8B949E">lumaan-perfumes.vercel.app</text>
+
+        <!-- Browser content area -->
+        <g transform="translate(0, 36)">
+          <rect width="640" height="344" rx="0" fill="#0D1117"/>
+          
+          <!-- Website preview placeholder -->
+          <g transform="translate(20, 20)">
+            <!-- Hero section -->
+            <rect width="600" height="140" rx="8" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+            <text x="300" y="60" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="#F0F6FC" text-anchor="middle">LUMAAN</text>
+            <text x="300" y="82" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="400" fill="#8B949E" text-anchor="middle">LUXURY FRAGRANCES</text>
+            <text x="300" y="110" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" font-weight="400" fill="#58A6FF" text-anchor="middle">LUMAAN WEBSITE PREVIEW</text>
+            
+            <!-- Product grid -->
+            <g transform="translate(0, 160)">
+              <rect width="190" height="120" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+              <rect x="205" width="190" height="120" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+              <rect x="410" width="190" height="120" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+              
+              <text x="95" y="50" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Product</text>
+              <text x="300" y="50" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Product</text>
+              <text x="505" y="50" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Product</text>
+              
+              <text x="95" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="8" fill="#58A6FF" text-anchor="middle">$120</text>
+              <text x="300" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="8" fill="#58A6FF" text-anchor="middle">$150</text>
+              <text x="505" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="8" fill="#58A6FF" text-anchor="middle">$180</text>
+            </g>
+          </g>
+
+          <!-- Browser screen glow -->
+          <rect width="640" height="344" fill="none" stroke="#58A6FF" stroke-width="0.5" opacity="0.1">
+            <animate attributeName="opacity" values="0.1;0.2;0.1" dur="8s" repeatCount="indefinite"/>
+          </rect>
+        </g>
+      </g>
+
+      <!-- Features section -->
+      <g transform="translate(0, 560)">
+        <text x="0" y="0" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#8B949E" letter-spacing="0.8">FEATURES</text>
+        
+        <g transform="translate(0, 16)">
+          <circle cx="4" cy="4" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="14" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Premium UI</text>
+          
+          <circle cx="124" cy="4" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="134" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Responsive Design</text>
+          
+          <circle cx="284" cy="4" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="294" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Elegant Branding</text>
+          
+          <circle cx="424" cy="4" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="434" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Luxury Experience</text>
+          
+          <circle cx="4" cy="24" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="14" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Interactive Showcase</text>
+          
+          <circle cx="164" cy="24" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="174" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Smooth Navigation</text>
+          
+          <circle cx="314" cy="24" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="324" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Modern Layout</text>
+          
+          <circle cx="424" cy="24" r="2" fill="#58A6FF" opacity="0.6"/>
+          <text x="434" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Mobile Optimized</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Tech stack chips -->
+    <g transform="translate(40, 540)">
+      <text x="0" y="0" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#8B949E" letter-spacing="0.8">TECH STACK</text>
+      
+      <g transform="translate(0, 14)">
+        <!-- HTML5 chip -->
+        <rect width="70" height="26" rx="6" fill="url(#chipGrad)" stroke="#30363D" stroke-width="0.5">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+        </rect>
+        <text x="35" y="17" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" font-weight="500" fill="#F0F6FC" text-anchor="middle">HTML5</text>
+        
+        <!-- CSS3 chip -->
+        <rect x="80" width="70" height="26" rx="6" fill="url(#chipGrad)" stroke="#30363D" stroke-width="0.5">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+        </rect>
+        <text x="115" y="17" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" font-weight="500" fill="#F0F6FC" text-anchor="middle">CSS3</text>
+        
+        <!-- JavaScript chip -->
+        <rect x="160" width="90" height="26" rx="6" fill="url(#chipGrad)" stroke="#30363D" stroke-width="0.5">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="1s"/>
+        </rect>
+        <text x="205" y="17" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" font-weight="500" fill="#F0F6FC" text-anchor="middle">JavaScript</text>
+      </g>
+    </g>
+
+    <!-- Action buttons -->
+    <g transform="translate(40, 590)">
+      <!-- Live Demo button -->
+      <g filter="url(#btnShadow)">
+        <rect width="130" height="32" rx="8" fill="url(#btnPrimary)">
+          <animate attributeName="opacity" values="1;0.9;1" dur="3s" repeatCount="indefinite"/>
+        </rect>
+        <text x="65" y="21" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#0D1117" text-anchor="middle">Live Demo</text>
+      </g>
+      
+      <!-- Repository button -->
+      <g transform="translate(140, 0)">
+        <rect width="130" height="32" rx="8" fill="#21262D" stroke="#30363D" stroke-width="1">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite"/>
+        </rect>
+        <text x="65" y="21" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#F0F6FC" text-anchor="middle">Repository</text>
+      </g>
+    </g>
+
+    <!-- Corner accent -->
+    <circle cx="690" cy="30" r="4" fill="#58A6FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- PROJECT CARD 2: Pearl Beauty Parlour         -->
+  <!-- ============================================ -->
+  <g transform="translate(800, 170)" filter="url(#cardShadow)">
+    <!-- Floating animation (offset timing) -->
+    <animateTransform attributeName="transform" type="translate" values="800,170;800,167;800,170" dur="9s" repeatCount="indefinite"/>
+    
+    <!-- Card background -->
+    <rect width="720" height="620" rx="20" fill="url(#cardGlass)" stroke="#30363D" stroke-width="1"/>
+    
+    <!-- Animated border glow -->
+    <rect width="720" height="620" rx="20" fill="none" stroke="url(#cardBorderAnim)" stroke-width="1.5" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;0.8;0.5" dur="6s" repeatCount="indefinite" begin="1s"/>
+    </rect>
+
+    <!-- Glass reflection sweep -->
+    <rect width="720" height="620" rx="20" fill="url(#reflection)" opacity="0.3">
+      <animate attributeName="opacity" values="0.3;0.5;0.3" dur="10s" repeatCount="indefinite" begin="2s"/>
+    </rect>
+
+    <!-- Card content -->
+    <g transform="translate(40, 40)">
+      <!-- Project header -->
+      <rect x="0" y="0" width="3" height="28" rx="1.5" fill="#79C0FF"/>
+      <text x="16" y="12" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#8B949E" letter-spacing="0.8">FEATURED PROJECT</text>
+      <text x="16" y="28" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="24" font-weight="700" fill="#F0F6FC" letter-spacing="-0.3">Pearl Beauty Parlour</text>
+      <text x="16" y="48" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="500" fill="#79C0FF">Professional Salon Website</text>
+
+      <!-- Description -->
+      <text x="0" y="78" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="13" font-weight="400" fill="#8B949E">
+        <tspan x="0" dy="0">A modern beauty salon website focused on elegant presentation, responsive layouts</tspan>
+        <tspan x="0" dy="20">and customer engagement. Built with attention to business branding and user experience.</tspan>
+      </text>
+
+      <!-- Browser mockup -->
+      <g transform="translate(0, 120)" filter="url(#browserShadow)">
+        <!-- Browser frame -->
+        <rect width="640" height="380" rx="10" fill="url(#browserFrame)" stroke="#30363D" stroke-width="1"/>
+        
+        <!-- Browser title bar -->
+        <rect x="0" y="0" width="640" height="36" rx="10" fill="#161B22"/>
+        <rect x="0" y="26" width="640" height="10" fill="#161B22"/>
+        <line x1="0" y1="36" x2="640" y2="36" stroke="#30363D" stroke-width="1"/>
+
+        <!-- Window controls -->
+        <circle cx="18" cy="18" r="5.5" fill="#FF5F57"/>
+        <circle cx="36" cy="18" r="5.5" fill="#FFBD2E"/>
+        <circle cx="54" cy="18" r="5.5" fill="#28C840"/>
+
+        <!-- Address bar -->
+        <rect x="80" y="10" width="480" height="18" rx="4" fill="#0D1117" stroke="#30363D" stroke-width="0.5"/>
+        <text x="96" y="23" font-family="'JetBrains Mono','SF Mono',monospace" font-size="9" fill="#8B949E">pearl-beauty-parlour.vercel.app</text>
+
+        <!-- Browser content area -->
+        <g transform="translate(0, 36)">
+          <rect width="640" height="344" rx="0" fill="#0D1117"/>
+          
+          <!-- Website preview placeholder -->
+          <g transform="translate(20, 20)">
+            <!-- Hero section -->
+            <rect width="600" height="140" rx="8" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+            <text x="300" y="60" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="16" font-weight="600" fill="#F0F6FC" text-anchor="middle">PEARL</text>
+            <text x="300" y="82" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="400" fill="#8B949E" text-anchor="middle">BEAUTY PARLOUR</text>
+            <text x="300" y="110" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" font-weight="400" fill="#79C0FF" text-anchor="middle">PEARL BEAUTY PREVIEW</text>
+            
+            <!-- Services grid -->
+            <g transform="translate(0, 160)">
+              <rect width="190" height="120" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+              <rect x="205" width="190" height="120" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+              <rect x="410" width="190" height="120" rx="6" fill="#161B22" stroke="#30363D" stroke-width="0.5"/>
+              
+              <text x="95" y="50" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Hair Styling</text>
+              <text x="300" y="50" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Skincare</text>
+              <text x="505" y="50" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="9" fill="#8B949E" text-anchor="middle">Makeup</text>
+              
+              <text x="95" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="8" fill="#79C0FF" text-anchor="middle">Book Now</text>
+              <text x="300" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="8" fill="#79C0FF" text-anchor="middle">Book Now</text>
+              <text x="505" y="90" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="8" fill="#79C0FF" text-anchor="middle">Book Now</text>
+            </g>
+          </g>
+
+          <!-- Browser screen glow -->
+          <rect width="640" height="344" fill="none" stroke="#79C0FF" stroke-width="0.5" opacity="0.1">
+            <animate attributeName="opacity" values="0.1;0.2;0.1" dur="8s" repeatCount="indefinite" begin="1s"/>
+          </rect>
+        </g>
+      </g>
+
+      <!-- Features section -->
+      <g transform="translate(0, 540)">
+        <text x="0" y="0" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#8B949E" letter-spacing="0.8">FEATURES</text>
+        
+        <g transform="translate(0, 16)">
+          <circle cx="4" cy="4" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="14" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Responsive Layout</text>
+          
+          <circle cx="144" cy="4" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="154" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Appointment Experience</text>
+          
+          <circle cx="334" cy="4" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="344" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Elegant UI</text>
+          
+          <circle cx="424" cy="4" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="434" y="7" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Business Branding</text>
+          
+          <circle cx="4" cy="24" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="14" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Modern Design</text>
+          
+          <circle cx="124" cy="24" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="134" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Customer Focused</text>
+          
+          <circle cx="254" cy="24" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="264" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Mobile Friendly</text>
+          
+          <circle cx="374" cy="24" r="2" fill="#79C0FF" opacity="0.6"/>
+          <text x="384" y="27" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="500" fill="#F0F6FC">Professional Interface</text>
+        </g>
+      </g>
+    </g>
+
+    <!-- Tech stack chips -->
+    <g transform="translate(40, 540)">
+      <text x="0" y="0" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#8B949E" letter-spacing="0.8">TECH STACK</text>
+      
+      <g transform="translate(0, 14)">
+        <!-- HTML5 chip -->
+        <rect width="70" height="26" rx="6" fill="url(#chipGrad)" stroke="#30363D" stroke-width="0.5">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="0.5s"/>
+        </rect>
+        <text x="35" y="17" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" font-weight="500" fill="#F0F6FC" text-anchor="middle">HTML5</text>
+        
+        <!-- CSS3 chip -->
+        <rect x="80" width="70" height="26" rx="6" fill="url(#chipGrad)" stroke="#30363D" stroke-width="0.5">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="1s"/>
+        </rect>
+        <text x="115" y="17" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" font-weight="500" fill="#F0F6FC" text-anchor="middle">CSS3</text>
+        
+        <!-- JavaScript chip -->
+        <rect x="160" width="90" height="26" rx="6" fill="url(#chipGrad)" stroke="#30363D" stroke-width="0.5">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="1.5s"/>
+        </rect>
+        <text x="205" y="17" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" font-weight="500" fill="#F0F6FC" text-anchor="middle">JavaScript</text>
+      </g>
+    </g>
+
+    <!-- Action buttons -->
+    <g transform="translate(40, 590)">
+      <!-- Live Demo button -->
+      <g filter="url(#btnShadow)">
+        <rect width="130" height="32" rx="8" fill="url(#btnPrimary)">
+          <animate attributeName="opacity" values="1;0.9;1" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+        </rect>
+        <text x="65" y="21" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#0D1117" text-anchor="middle">Live Demo</text>
+      </g>
+      
+      <!-- Repository button -->
+      <g transform="translate(140, 0)">
+        <rect width="130" height="32" rx="8" fill="#21262D" stroke="#30363D" stroke-width="1">
+          <animate attributeName="stroke-opacity" values="0.5;1;0.5" dur="3s" repeatCount="indefinite" begin="0.5s"/>
+        </rect>
+        <text x="65" y="21" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="11" font-weight="600" fill="#F0F6FC" text-anchor="middle">Repository</text>
+      </g>
+    </g>
+
+    <!-- Corner accent -->
+    <circle cx="690" cy="30" r="4" fill="#79C0FF" opacity="0.5">
+      <animate attributeName="opacity" values="0.5;1;0.5" dur="4s" repeatCount="indefinite" begin="1s"/>
+    </circle>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM SECTION                               -->
+  <!-- ============================================ -->
+  <g transform="translate(800, 850)">
+    <!-- Centered statement -->
+    <text x="0" y="0" font-family="'Inter','SF Pro Display','Segoe UI',system-ui,sans-serif" font-size="14" font-weight="500" fill="#8B949E" text-anchor="middle" letter-spacing="0.3">
+      Building modern digital experiences through thoughtful frontend engineering and continuous learning.
+    </text>
+    
+    <!-- Decorative line -->
+    <line x1="-200" y1="20" x2="200" y2="20" stroke="#30363D" stroke-width="0.5" opacity="0.4"/>
+    
+    <!-- Status indicators -->
+    <g transform="translate(-180, 35)">
+      <circle cx="0" cy="0" r="3" fill="#3FB950" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite"/>
+      </circle>
+      <text x="10" y="4" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">Production Ready</text>
+      
+      <circle cx="130" cy="0" r="3" fill="#58A6FF" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite" begin="0.5s"/>
+      </circle>
+      <text x="140" y="4" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">Responsive</text>
+      
+      <circle cx="240" cy="0" r="3" fill="#79C0FF" opacity="0.7">
+        <animate attributeName="opacity" values="0.7;1;0.7" dur="2.5s" repeatCount="indefinite" begin="1s"/>
+      </circle>
+      <text x="250" y="4" font-family="'Inter','Segoe UI',system-ui,sans-serif" font-size="10" fill="#8B949E">Modern Stack</text>
+    </g>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ADDITIONAL VISUAL DETAILS                    -->
+  <!-- ============================================ -->
+  
+  <!-- Corner decorations -->
+  <g stroke="#30363D" stroke-width="1" opacity="0.25">
+    <line x1="30" y1="30" x2="30" y2="50"/>
+    <line x1="30" y1="30" x2="50" y2="30"/>
+    <line x1="1570" y1="30" x2="1570" y2="50"/>
+    <line x1="1570" y1="30" x2="1550" y2="30"/>
+    <line x1="30" y1="970" x2="30" y2="950"/>
+    <line x1="30" y1="970" x2="50" y2="970"/>
+    <line x1="1570" y1="970" x2="1570" y2="950"/>
+    <line x1="1570" y1="970" x2="1550" y2="970"/>
+  </g>
+
+  <!-- Version indicator -->
+  <text x="1540" y="974" font-family="'JetBrains Mono','SF Mono',monospace" font-size="10" fill="#484F58" text-anchor="end">v1.2.0</text>
+
+  <!-- Animated wave at bottom -->
+  <path d="M0 990 Q200 985 400 990 Q600 995 800 990 Q1000 985 1200 990 Q1400 995 1600 990" fill="none" stroke="#58A6FF" stroke-width="0.5" opacity="0.15">
+    <animate attributeName="d" values="M0 990 Q200 985 400 990 Q600 995 800 990 Q1000 985 1200 990 Q1400 995 1600 990;M0 990 Q200 995 400 990 Q600 985 800 990 Q1000 995 1200 990 Q1400 985 1600 990;M0 990 Q200 985 400 990 Q600 995 800 990 Q1000 985 1200 990 Q1400 995 1600 990" dur="10s" repeatCount="indefinite"/>
+  </path>
+
+  <!-- Additional floating particles -->
+  <g opacity="0.3">
+    <circle cx="760" cy="150" r="1" fill="#58A6FF">
+      <animate attributeName="cy" values="150;140;150" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="840" cy="820" r="1.2" fill="#79C0FF">
+      <animate attributeName="cy" values="820;830;820" dur="9s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="60" cy="500" r="0.8" fill="#58A6FF">
+      <animate attributeName="cy" values="500;490;500" dur="7s" repeatCount="indefinite"/>
+    </circle>
+    <circle cx="1540" cy="450" r="1" fill="#79C0FF">
+      <animate attributeName="cy" values="450;460;450" dur="8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <!-- Subtle vignette effect -->
+  <rect width="1600" height="1000" fill="url(#vignette)" pointer-events="none"/>
+
+</svg>
